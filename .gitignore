@@ -1,0 +1,51 @@
+# Temporary & scratch raw images
+anh dau tien.*
+anh_dau_tien_clean.png
+anh_dau_tien_nobg.png
+canhtaydai.png
+mau den.png
+mau hong.png
+mau trang.png
+mau xanh.png
+nen.png
+scratch_cap.png
+test_composite.png
+
+# Intermediate calibration and test assets
+assets/bottle_logo_crop.png
+assets/canhtaydai.png
+assets/canhtaydai_hd_matched.png
+assets/compare_alignment.png
+assets/final_rendered_check.png
+assets/hero-hand-exact.png
+assets/hero-hand-hd.png
+assets/hero-hand.png
+assets/logo_crop_test.png
+assets/preview_canhtaydai.png
+assets/target_*
+assets/test_*
+
+# Raw uncropped charm images (only optimized charm/charm-*.png are tracked)
+charm/coffe.png
+charm/cỏ bốn lá.png
+charm/gấu bơ.png
+charm/hoa mặt trời.png
+charm/kim cương.png
+charm/mèo thần tài.png
+charm/nơ hồng.png
+charm/trái tim kim cương.png
+
+# Audit & test screenshots
+audit-screenshots/
+
+# Internal prompt notes and document generators
+generate_docx.py
+PROMPTS_AI_AGENT_TASKS.docx
+PROMPTS_AI_AGENT_TASKS.md
+
+# Operating System & IDE files
+.DS_Store
+Thumbs.db
+*.tmp
+.vscode/
+.idea/
