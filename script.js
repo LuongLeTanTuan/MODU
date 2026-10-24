@@ -246,33 +246,83 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ===================================================================
-     4. PAGE 1: HERO COLOR EXPLORER INTERACTIONS
+     4. PAGE 1: HERO PARALLAX & CTA SMOOTH SCROLL
      =================================================================== */
-  heroColorCols.forEach(col => {
-    col.addEventListener('click', () => {
-      const colorKey = col.dataset.color;
-      if (!colorKey) return;
+  if (heroCustomizeCtaBtn) {
+    heroCustomizeCtaBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.getElementById('page-personalize');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
 
-      heroColorCols.forEach(c => c.classList.remove('active'));
-      col.classList.add('active');
+  // 3D Mouse Parallax on Page 1 Hero Section
+  const pageHeroSection = document.getElementById('page-hero');
+  const heroVisualContainer = document.getElementById('heroVisual');
+  const rippleStage = document.getElementById('rippleStage');
 
-      state.color = colorKey;
-      state.lid = colorKey; // matching lid loop default
+  if (pageHeroSection && window.innerWidth > 768) {
+    let heroMouseX = 0, heroMouseY = 0;
+    let heroCurrX = 0, heroCurrY = 0;
 
-      // Switch Page 1 lifestyle hand to studio bottle if non-mint
-      if (colorKey !== 'mint' && heroStudioImg && heroHandImg) {
-        heroHandImg.style.display = 'none';
-        heroStudioImg.style.display = 'block';
-        heroStudioImg.src = ASSETS.bottles[colorKey];
-      } else if (heroHandImg && heroStudioImg) {
-        heroHandImg.style.display = 'block';
-        heroStudioImg.style.display = 'none';
+    pageHeroSection.addEventListener('mousemove', (e) => {
+      const rect = pageHeroSection.getBoundingClientRect();
+      heroMouseX = (e.clientX - rect.left) / rect.width - 0.5;
+      heroMouseY = (e.clientY - rect.top) / rect.height - 0.5;
+    });
+
+    pageHeroSection.addEventListener('mouseleave', () => {
+      heroMouseX = 0;
+      heroMouseY = 0;
+    });
+
+    function renderHeroParallax() {
+      heroCurrX += (heroMouseX - heroCurrX) * 0.08;
+      heroCurrY += (heroMouseY - heroCurrY) * 0.08;
+
+      if (heroVisualContainer) {
+        heroVisualContainer.style.transform = `translate3d(${heroCurrX * -28}px, ${heroCurrY * -18}px, 0) rotateY(${heroCurrX * -6}deg) rotateZ(${heroCurrX * -2}deg)`;
+      }
+      if (rippleStage) {
+        rippleStage.style.transform = `translate(calc(-50% + ${heroCurrX * 36}px), calc(-50% + ${heroCurrY * 24}px))`;
       }
 
-      renderAll();
-      showToast(`Đã chọn ${ASSETS.names.colors[colorKey]}`);
+      requestAnimationFrame(renderHeroParallax);
+    }
+    renderHeroParallax();
+  }
+
+  // 3D Tilt Parallax on Page 2 Interactive Bottle
+  const pagePersonalizeSection = document.getElementById('page-personalize');
+  if (pagePersonalizeSection && interactiveBottleWrapper && window.innerWidth > 768) {
+    let pMouseX = 0, pMouseY = 0;
+    let pCurrX = 0, pCurrY = 0;
+
+    pagePersonalizeSection.addEventListener('mousemove', (e) => {
+      const rect = pagePersonalizeSection.getBoundingClientRect();
+      pMouseX = (e.clientX - rect.left) / rect.width - 0.5;
+      pMouseY = (e.clientY - rect.top) / rect.height - 0.5;
     });
-  });
+
+    pagePersonalizeSection.addEventListener('mouseleave', () => {
+      pMouseX = 0;
+      pMouseY = 0;
+    });
+
+    function renderBottleParallax() {
+      pCurrX += (pMouseX - pCurrX) * 0.06;
+      pCurrY += (pMouseY - pCurrY) * 0.06;
+
+      if (interactiveBottleWrapper) {
+        interactiveBottleWrapper.style.transform = `rotate(${17 + pCurrX * 6}deg) translate3d(${pCurrX * 12}px, ${-10 + pCurrY * 12}px, 0)`;
+      }
+
+      requestAnimationFrame(renderBottleParallax);
+    }
+    renderBottleParallax();
+  }
 
   /* ===================================================================
      5. PAGE 2: PERSONALIZATION CONTROLS
@@ -520,6 +570,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const targetSec = document.querySelector(targetId);
       if (targetSec) {
         targetSec.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  document.querySelectorAll('a[href^="#page-"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const targetId = link.getAttribute('href');
+      const targetEl = document.querySelector(targetId);
+      if (targetEl) {
+        e.preventDefault();
+        targetEl.scrollIntoView({ behavior: 'smooth' });
       }
     });
   });
