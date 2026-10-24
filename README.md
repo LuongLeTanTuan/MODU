@@ -47,4 +47,13 @@ MODU/
 ```
 
 ---
+## 📚 Cẩm Nang & Blog MODU (10 Bài Viết Chuyên Sâu)
+
+Mục **Blog** trên thanh điều hướng mở trang `blog/index.html`, gồm trọn bộ 10 bài viết cẩm nang tiếng Việt chuẩn SEO chuyên sâu về cá nhân hóa, khắc tên laser, chất liệu ruột bình Inox 316 chuẩn y tế, túi mù charm và set quà tặng cao cấp:
+
+- Mỗi bài có URL tĩnh riêng, Schema.org BlogPosting & BreadcrumbList, Open Graph và hệ thống liên kết từ khóa chéo (Internal Linking & Keyword Tags).
+- Hệ thống bình luận tích hợp cơ sở dữ liệu thời gian thực.
+- Thiết kế Footer đồng bộ sang trọng chuẩn DTC hardware brand trên toàn bộ các trang con.
+- Sitemap tự động cập nhật tại `sitemap.xml`.
+
 © 2026 MODU. Modify + You.

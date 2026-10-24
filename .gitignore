@@ -37,11 +37,26 @@ charm/trái tim kim cương.png
 
 # Audit & test screenshots
 audit-screenshots/
+.playwright-cli/
+output/playwright/
+scratch/blog-source.json
+scratch/blog-image-manifest.json
 
 # Internal prompt notes and document generators
 generate_docx.py
 PROMPTS_AI_AGENT_TASKS.docx
 PROMPTS_AI_AGENT_TASKS.md
+
+# Dependencies & Scratch
+node_modules/
+.img2threejs/
+scratch/
+*.bak
+
+# Design mockups (raw)
+page 1.png
+page 2.png
+page 3.png
 
 # Operating System & IDE files
 .DS_Store

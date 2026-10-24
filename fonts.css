@@ -1,0 +1,9 @@
+/* Full-character local fonts, including Vietnamese diacritics. SIL OFL 1.1. */
+@font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:300;font-display:swap;src:url('assets/fonts/be-vietnam-pro/BeVietnamPro-Light.ttf') format('truetype')}
+@font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/be-vietnam-pro/BeVietnamPro-Regular.ttf') format('truetype')}
+@font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:500;font-display:swap;src:url('assets/fonts/be-vietnam-pro/BeVietnamPro-Medium.ttf') format('truetype')}
+@font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:600;font-display:swap;src:url('assets/fonts/be-vietnam-pro/BeVietnamPro-SemiBold.ttf') format('truetype')}
+@font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:700;font-display:swap;src:url('assets/fonts/be-vietnam-pro/BeVietnamPro-Bold.ttf') format('truetype')}
+@font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:800;font-display:swap;src:url('assets/fonts/be-vietnam-pro/BeVietnamPro-ExtraBold.ttf') format('truetype')}
+@font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:900;font-display:swap;src:url('assets/fonts/be-vietnam-pro/BeVietnamPro-Black.ttf') format('truetype')}
+@font-face{font-family:'Brittany Signature';font-style:normal;font-weight:400;font-display:swap;src:url('assets/fonts/BrittanySignature.woff') format('woff'),url('https://fonts.cdnfonts.com/s/39082/BrittanySignature-LjyZ.woff') format('woff')}

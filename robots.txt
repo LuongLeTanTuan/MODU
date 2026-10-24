@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /scratch/
+Disallow: /.img2threejs/
+Sitemap: https://modubottles.com/sitemap.xml

@@ -1,0 +1,740 @@
+/* ===================================================================
+   MODU WATER BOTTLE - ABOUT PAGE STYLESHEET
+   Cloud sky continuous foundation + Centerpiece AI bottle showcase
+   Sleek unboxed typography (No rigid card enclosures, no text under photo)
+   =================================================================== */
+
+:root {
+  --font-display: 'Be Vietnam Pro', 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  --font-body: 'Be Vietnam Pro', 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+
+  /* MODU DESIGN.md System Tokens */
+  --color-primary: #d4fc39;
+  --color-primary-focus: #bfee1a;
+  --color-on-primary: #151a14;
+  --color-ink: #1d1d1f;
+  --color-body: #1d1d1f;
+  --color-canvas: #ffffff;
+  --color-canvas-parchment: #f5f5f7;
+  --color-surface-pearl: #fafafc;
+  --color-surface-tile-1: #1d1d1f;
+  --color-hairline: #e5e5e7;
+  --radius-pill: 9999px;
+  --radius-lg: 18px;
+
+  --lime-accent: #d4fc39;
+  --lime-hover: #bfee1a;
+  --lime-glow: rgba(212, 252, 57, 0.45);
+
+  --sky-navy: #082138;
+  --sky-slate: #153554;
+  --sky-blue: #0284c7;
+  --sky-blue-deep: #0369a1;
+}
+
+.btn-pill-lime {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--lime-accent);
+  color: #151a14;
+  font-family: var(--font-display);
+  font-weight: 700;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(212, 252, 57, 0.4);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-pill-lime:hover {
+  background-color: var(--lime-hover);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 14px 30px rgba(212, 252, 57, 0.55);
+}
+
+.btn-pill-lime:active {
+  transform: scale(0.95);
+}
+
+/* Base Body: Continuous Cloud Sky */
+body.modu-body {
+  font-family: var(--font-body);
+  color: var(--sky-navy);
+  background: #80bcf7 url('assets/hero-bg.png') center top / cover no-repeat fixed !important;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Page Background Container: completely transparent so fixed cloud sky shines through */
+.about-page-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: transparent !important;
+  overflow-x: hidden;
+  padding-top: 110px;
+}
+
+/* Atmospheric Ambient Light Overlays (Gentle sunbeams & mist) */
+.about-page-wrapper::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.35) 0%, transparent 60%),
+              radial-gradient(circle at 10% 48%, rgba(255, 255, 255, 0.15) 0%, transparent 45%),
+              radial-gradient(circle at 90% 75%, rgba(255, 255, 255, 0.2) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Main Container */
+.about-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 4vw;
+}
+
+/* ===================================================================
+   HERO INTRO SECTION
+   =================================================================== */
+.about-hero-section {
+  padding: 1.5rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-badge-tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 8px 26px;
+  border-radius: 999px;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #07223b;
+  margin-bottom: 1.4rem;
+  box-shadow: 0 6px 20px rgba(7, 34, 66, 0.08);
+}
+
+.about-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.3rem, 4.2vw, 3.8rem);
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  margin-bottom: 1.4rem;
+  max-width: 920px;
+  color: #ffffff;
+  text-shadow: 0 3px 20px rgba(7, 34, 66, 0.32);
+}
+
+.about-hero-title .highlight-gradient {
+  color: var(--lime-accent);
+  text-shadow: 0 0 25px rgba(212, 252, 57, 0.65), 0 3px 12px rgba(7, 34, 66, 0.3);
+}
+
+.about-hero-desc {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 1.3vw, 1.2rem);
+  font-weight: 600;
+  line-height: 1.75;
+  color: var(--sky-navy);
+  max-width: 840px;
+  margin-bottom: 2.5rem;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+/* ===================================================================
+   CENTERPIECE SHOWCASE: AI BOTTLE + SURROUNDING ORBIT NOTES
+   (No rigid card enclosures, no text clamped under photo foot)
+   =================================================================== */
+.about-centerpiece-showcase {
+  display: grid;
+  grid-template-columns: 1fr minmax(360px, 460px) 1fr;
+  gap: 3.5rem 3rem;
+  align-items: center;
+  margin: 1rem auto 4.5rem;
+  width: 100%;
+}
+
+/* Left & Right Orbit Columns */
+.orbit-notes-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+  justify-content: space-between;
+}
+
+.orbit-notes-left {
+  text-align: right;
+}
+
+.orbit-notes-right {
+  text-align: left;
+}
+
+/* Individual Floating Note: Organic, Unboxed */
+.orbit-note {
+  position: relative;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.orbit-note:hover {
+  transform: translateY(-4px);
+}
+
+.orbit-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-display);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #072238;
+  background: var(--lime-accent);
+  padding: 5px 16px;
+  border-radius: 999px;
+  margin-bottom: 0.6rem;
+  box-shadow: 0 4px 14px rgba(212, 252, 57, 0.38);
+}
+
+.orbit-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.22rem, 1.45vw, 1.4rem);
+  font-weight: 800;
+  color: var(--sky-navy);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+  line-height: 1.35;
+  margin-bottom: 0.55rem;
+}
+
+.orbit-desc {
+  font-family: var(--font-body);
+  font-size: 0.96rem;
+  line-height: 1.68;
+  color: var(--sky-slate);
+  font-weight: 500;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+/* The Center Bottle Container */
+.about-bottle-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about-bottle-frame {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 36px;
+  overflow: hidden;
+  box-shadow: 0 32px 75px rgba(10, 42, 75, 0.28), 0 10px 25px rgba(255, 255, 255, 0.6) inset;
+  border: 2.5px solid rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s ease;
+}
+
+.about-bottle-frame:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 42px 95px rgba(10, 42, 75, 0.35), 0 12px 30px rgba(255, 255, 255, 0.8) inset;
+}
+
+.about-bottle-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transform: scale(1.15);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about-bottle-frame:hover .about-bottle-img {
+  transform: scale(1.2);
+}
+
+/* ===================================================================
+   UNBOXED SECTION HEADINGS & COMMON PATTERNS
+   (Overriding style.css .about-section background completely!)
+   =================================================================== */
+.about-page-wrapper .about-section,
+.about-section {
+  background: transparent !important;
+  padding: 4.5rem 0 3.5rem;
+}
+
+.section-head {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 3.5rem;
+}
+
+.section-subtag {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #151a14;
+  background: var(--lime-accent);
+  padding: 5px 18px;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(212, 252, 57, 0.35);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 3.4vw, 2.9rem);
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  margin-bottom: 1rem;
+  color: var(--sky-navy);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.section-desc {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--sky-slate);
+  font-weight: 500;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+/* ===================================================================
+   SECTION 1: PHILOSOPHY (UNBOXED OPEN 3-COL FLOW)
+   =================================================================== */
+.philosophy-open-flow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.55);
+  padding-top: 3.2rem;
+}
+
+.open-story-item {
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.open-story-item:hover {
+  transform: translateY(-4px);
+}
+
+.story-top-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 0.8rem;
+}
+
+.story-num {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--sky-blue);
+  line-height: 1;
+  text-shadow: 0 2px 8px rgba(2, 132, 199, 0.2);
+}
+
+.story-category {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #015f9e;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  padding: 4px 14px;
+  border-radius: 999px;
+  box-shadow: 0 3px 10px rgba(7, 34, 66, 0.06);
+}
+
+.story-title {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--sky-navy);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+  line-height: 1.3;
+  margin-bottom: 0.8rem;
+}
+
+.story-text {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  line-height: 1.72;
+  color: var(--sky-slate);
+  font-weight: 500;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+/* ===================================================================
+   SECTION 2: CRAFTSMANSHIP & SPECIFICATIONS (UNBOXED OPEN 2X2 FLOW)
+   =================================================================== */
+.craft-open-flow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5rem 3.5rem;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.55);
+  padding-top: 3.2rem;
+}
+
+.open-spec-item {
+  position: relative;
+  padding-left: 1.8rem;
+  border-left: 3px solid var(--lime-accent);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-left-color 0.3s ease;
+}
+
+.open-spec-item:hover {
+  transform: translateX(4px);
+  border-left-color: var(--sky-blue);
+}
+
+.open-spec-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 0.85rem;
+}
+
+.spec-num {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #072238;
+  background: var(--lime-accent);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(212, 252, 57, 0.35);
+}
+
+.spec-heading {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--sky-navy);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+  line-height: 1.3;
+}
+
+.spec-desc {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--sky-slate);
+  font-weight: 500;
+  margin-bottom: 1.1rem;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.open-spec-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.open-spec-list li {
+  font-family: var(--font-body);
+  font-size: 0.93rem;
+  font-weight: 600;
+  line-height: 1.55;
+  color: var(--sky-navy);
+  position: relative;
+  padding-left: 22px;
+}
+
+.open-spec-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--sky-blue);
+  font-weight: 900;
+  font-size: 0.95rem;
+}
+
+/* ===================================================================
+   SECTION 3 & 4: DUAL COLUMN FLOWS (CAPACITIES & COLORS/UNBOXING)
+   =================================================================== */
+.open-duo-flow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5rem;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.55);
+  padding-top: 3.2rem;
+}
+
+.open-duo-item {
+  position: relative;
+}
+
+.open-tagline {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #015f9e;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  padding: 4px 14px;
+  border-radius: 999px;
+  margin-bottom: 0.85rem;
+  box-shadow: 0 3px 10px rgba(7, 34, 66, 0.06);
+}
+
+.open-item-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--sky-navy);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+  line-height: 1.3;
+  margin-bottom: 0.85rem;
+}
+
+.open-item-desc {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  line-height: 1.72;
+  color: var(--sky-slate);
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.open-specs-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.open-spec-pill {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 999px;
+  padding: 7px 18px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+  color: var(--sky-navy);
+  box-shadow: 0 4px 12px rgba(7, 34, 66, 0.06);
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.open-spec-pill:hover {
+  transform: translateY(-2px);
+  background: #ffffff;
+}
+
+.open-palette-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 1.2rem;
+}
+
+.palette-entry {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--sky-slate);
+  font-weight: 500;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.palette-entry strong {
+  color: var(--sky-navy);
+  font-weight: 800;
+}
+
+/* ===================================================================
+   SECTION 5: CALL TO ACTION (OPEN AIRY CLOUD BANNER)
+   =================================================================== */
+.about-cta-open {
+  padding: 5rem 0 7.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.cta-open-content {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.cta-open-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 0 3px 20px rgba(7, 34, 66, 0.35);
+  line-height: 1.25;
+  margin-bottom: 1.3rem;
+}
+
+.cta-open-desc {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: var(--sky-navy);
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7);
+  margin-bottom: 2.8rem;
+}
+
+.about-cta-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-cta-lime {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--lime-accent);
+  color: #151a14;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 17px 38px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 10px 25px var(--lime-glow);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-cta-lime:hover {
+  background-color: var(--lime-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 35px var(--lime-glow);
+}
+
+.btn-cta-ghost {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1.5px solid rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  color: var(--sky-navy);
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 700;
+  padding: 16px 32px;
+  border-radius: 9999px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-cta-ghost:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(7, 34, 66, 0.12);
+}
+
+/* ===================================================================
+   FOOTER (Inherited from unified style.css .modu-footer)
+   =================================================================== */
+/* Modu-footer styles are centrally defined in style.css for consistent DTC hardware aesthetic */
+
+/* ===================================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   =================================================================== */
+@media (max-width: 1100px) {
+  .about-centerpiece-showcase {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .orbit-notes-left,
+  .orbit-notes-right {
+    text-align: left;
+  }
+
+  .about-bottle-center {
+    order: -1;
+  }
+
+  .philosophy-open-flow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .open-duo-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page-wrapper {
+    padding-top: 85px;
+  }
+
+  .about-hero-section {
+    padding: 1.5rem 0 2.5rem;
+  }
+
+  .philosophy-open-flow,
+  .craft-open-flow,
+  .open-duo-flow {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}

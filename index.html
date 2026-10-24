@@ -3,22 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MODU - Tự Thiết Kế, Tự Thể Hiện</title>
-  <meta name="description" content="MODU là bình giữ nhiệt cá nhân hóa: tự phối màu, khắc tên laser, chọn charm túi mù và mang theo phong cách riêng mỗi ngày.">
   
-  <!-- Fonts -->
+  <!-- ================= GOOGLE SEO ESSENTIALS ================= -->
+  <title>MODU™ | Bình giữ nhiệt cá nhân hóa — Chọn màu, nắp, phụ kiện &amp; khắc tên</title>
+  <meta name="description" content="Khám phá bình giữ nhiệt cá nhân hóa MODU. Tự chọn màu pastel, phối nắp và quai xách, khắc tên laser sắc nét và sưu tầm phụ kiện túi mù. Giữ lạnh 24 giờ và giữ nóng 12 giờ.">
+  <meta name="keywords" content="bình giữ nhiệt MODU, bình giữ nhiệt cá nhân hóa, bình giữ nhiệt theo yêu cầu, bình khắc tên laser, bình giữ nhiệt có phụ kiện, nắp bình tùy chỉnh, bình inox, bình giữ nhiệt khắc tên">
+  <meta name="author" content="MODU Lifestyle Inc.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://modubottles.com/">
+
+  <!-- Open Graph / Facebook / Zalo -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://modubottles.com/">
+  <meta property="og:title" content="MODU™ — Bình giữ nhiệt cho mọi phong cách | Tự thiết kế">
+  <meta property="og:description" content="Chọn màu, nắp, phụ kiện và nội dung khắc laser. Tạo dấu ấn riêng mỗi ngày cùng bình giữ nhiệt inox MODU.">
+  <meta property="og:image" content="page 1.png">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:site_name" content="MODU">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://modubottles.com/">
+  <meta name="twitter:title" content="MODU™ — Bình giữ nhiệt cá nhân hóa">
+  <meta name="twitter:description" content="Thiết kế tinh tế, đồng hành cả ngày. Cá nhân hóa chiếc bình của bạn bằng màu sắc, phụ kiện và khắc tên laser sắc nét.">
+  <meta name="twitter:image" content="page 1.png">
+
+  <!-- Google Structured Data (Schema.org) for Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "MODU Insulated Water Bottle",
+    "image": [
+      "https://modubottles.com/assets/bottle-mint.png",
+      "https://modubottles.com/page 1.png",
+      "https://modubottles.com/page 2.png",
+      "https://modubottles.com/page 3.png"
+    ],
+    "description": "Bình giữ nhiệt inox hai lớp cách nhiệt chân không, có quai nắp tùy chỉnh, khắc tên laser sắc nét và phụ kiện trang trí thay đổi được.",
+    "sku": "MODU-BTL-01",
+    "mpn": "MODU-CUSTOM-01",
+    "brand": {
+      "@type": "Brand",
+      "name": "MODU"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://modubottles.com/",
+      "priceCurrency": "USD",
+      "price": "34.00",
+      "priceValidUntil": "2027-12-31",
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "1280",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  }
+  </script>
+
+  <!-- Local Be Vietnam Pro for UI; decorative engraving fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="style.css?v=v4">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css?v=v6">
 </head>
-<body>
+<body class="modu-body">
 
-  <!-- ================= NAVIGATION BAR ================= -->
+  <!-- ================= FIXED NAVIGATION BAR ================= -->
   <header class="navbar" id="mainNavbar">
     <!-- Brand Logo -->
-    <a href="#" class="brand-logo" aria-label="Trang chủ MODU">
+    <a href="#page-hero" class="brand-logo" aria-label="Trang chủ MODU">
       <div class="logo-text">
         <span class="logo-m">M</span>ODU
       </div>
@@ -27,797 +88,918 @@
     <!-- Nav Links -->
     <nav class="nav-center" aria-label="Điều hướng chính">
       <div class="nav-item dropdown">
-        <a href="#bottles" class="nav-link">
-          Bình MODU
-          <svg class="chevron" viewBox="0 0 24 24" fill="none">
-            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+        <a href="#page-hero" class="nav-link">
+          <span>Bình nước</span>
+          <svg class="morph-chevron" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 9C8 11 10 13 12 15C14 13 16 11 18 9"></path>
           </svg>
         </a>
       </div>
       <div class="nav-item dropdown">
-        <a href="#customize" class="nav-link" id="navCustomizeLink">
-          Tùy chỉnh
-          <svg class="chevron" viewBox="0 0 24 24" fill="none">
-            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+        <a href="#page-personalize" class="nav-link active" id="navCustomizeLink">
+          <span>Tự thiết kế</span>
+          <svg class="morph-chevron" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 9C8 11 10 13 12 15C14 13 16 11 18 9"></path>
           </svg>
-        </a>
-      </div>
-      <div class="nav-item">
-        <a href="#blindbox" class="nav-link">
-          Túi mù charm
-          <span class="nav-hot-badge">HOT</span>
         </a>
       </div>
       <div class="nav-item dropdown">
-        <a href="#accessories" class="nav-link">
-          Phụ kiện
-          <svg class="chevron" viewBox="0 0 24 24" fill="none">
-            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+        <a href="#page-checkout" class="nav-link">
+          <span>Phụ kiện</span>
+          <svg class="morph-chevron" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 9C8 11 10 13 12 15C14 13 16 11 18 9"></path>
           </svg>
         </a>
       </div>
-      <a href="#vibe" class="nav-link">Bộ sưu tập Vibe</a>
-      <a href="#about" class="nav-link">Thương hiệu</a>
+      <a href="about.html" class="nav-link">Giới thiệu</a>
+      <a href="blog/index.html" class="nav-link">Blog</a>
       <a href="#support" class="nav-link">Hỗ trợ</a>
     </nav>
 
-    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Mở menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
+    <!-- Interactive Quick Search Flyout Bar -->
+    <div class="nav-search-bar" id="navSearchBar" aria-hidden="true">
+      <input type="text" id="navSearchInput" placeholder="Tìm màu sắc (Sage, Blush...), charm, dung tích..." autocomplete="off">
+      <button type="button" class="search-clear-btn" id="searchClearBtn" aria-label="Xóa">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6C14 10 10 14 6 18M6 6C10 10 14 14 18 18"></path></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Toggle Button (Morphicons Spring Morphing) -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Mở menu điều hướng" aria-expanded="false">
+      <svg class="morph-svg" id="mobileMenuSvg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path id="mobileMenuPath" d="M4 5C9.3333 5 14.6667 5 20 5M4 12C9.3333 12 14.6667 12 20 12M4 19C9.3333 19 14.6667 19 20 19"></path>
+      </svg>
     </button>
 
-    <!-- Nav Action Icons -->
+    <!-- Nav Action Icons (Powered by Morphicons) -->
     <div class="nav-actions">
-      <button class="icon-btn" id="searchBtn" aria-label="Tìm kiếm">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-          <circle cx="11" cy="11" r="7"/>
-          <path d="M21 21l-4.35-4.35" stroke-linecap="round"/>
+      <button class="icon-btn" id="searchBtn" aria-label="Tìm bình nước và phụ kiện" title="Tìm kiếm">
+        <svg class="morph-svg" id="searchIconSvg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path id="searchIconPath" d="M21 21C19.5533 19.5533 18.1067 18.1067 16.66 16.66M19 11C19 15.4183 15.4183 19 11 19C6.5817 19 3 15.4183 3 11C3 6.5817 6.5817 3 11 3C15.4183 3 19 6.5817 19 11Z"></path>
         </svg>
       </button>
 
-      <button class="icon-btn" id="userBtn" aria-label="Tài khoản">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke-linecap="round"/>
-          <circle cx="12" cy="7" r="4"/>
+      <button class="icon-btn" id="userBtn" aria-label="Tài khoản khách hàng" title="Tài khoản">
+        <svg class="morph-svg" id="userIconSvg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 21C19 20.3333 19 19.6667 19 19C19 16.7909 17.2091 15 15 15C13 15 11 15 9 15C6.7909 15 5 16.7909 5 19C5 19.6667 5 20.3333 5 21M16 7C16 9.2091 14.2091 11 12 11C9.7909 11 8 9.2091 8 7C8 4.7909 9.7909 3 12 3C14.2091 3 16 4.7909 16 7Z"></path>
         </svg>
       </button>
 
-      <button class="icon-btn" id="cartBtn" aria-label="Túi mua hàng">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" stroke-linejoin="round"/>
-          <line x1="3" y1="6" x2="21" y2="6"/>
-          <path d="M16 10a4 4 0 0 1-8 0"/>
+      <button class="icon-btn" id="cartBtn" aria-label="Xem giỏ hàng" title="Giỏ hàng">
+        <svg class="morph-svg" id="cartIconSvg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path id="cartIconPath" d="M16 10C16 12.2091 14.2091 14 12 14C9.7909 14 8 12.2091 8 10M3.103 6.034C9.0343 6.034 14.9657 6.034 20.897 6.034M3.4 5.467C3.1404 5.8132 3 6.2343 3 6.667C3 11.1113 3 15.5557 3 20C3 21.1046 3.8954 22 5 22C9.6667 22 14.3333 22 19 22C20.1046 22 21 21.1046 21 20C21 15.5557 21 11.1113 21 6.667C21 6.2343 20.8596 5.8132 20.6 5.467C19.9333 4.578 19.2667 3.689 18.6 2.8C18.2223 2.2964 17.6295 2 17 2C13.6667 2 10.3333 2 7 2C6.3705 2 5.7777 2.2964 5.4 2.8C4.7333 3.689 4.0667 4.578 3.4 5.467Z"></path>
         </svg>
         <span class="cart-badge" id="cartCountBadge">1</span>
       </button>
     </div>
   </header>
 
-  <nav class="mobile-nav-panel" id="mobileNavPanel" aria-label="Điều hướng di động">
-    <a href="#bottles">Bình MODU</a>
-    <a href="#customize">Tùy chỉnh Studio</a>
+  <!-- Mobile Nav Panel -->
+  <nav class="mobile-nav-panel" id="mobileNavPanel" aria-label="Menu trên điện thoại">
+    <a href="#page-hero">1. Bộ sưu tập bình</a>
+    <a href="#page-personalize">2. Studio tự thiết kế</a>
+    <a href="#page-checkout">3. Kiểm tra đơn hàng</a>
     <a href="#blindbox">Khui Túi Mù Charm</a>
     <a href="#vibe">Bộ Sưu Tập Vibe</a>
-    <a href="#accessories">Phụ kiện</a>
-    <a href="#about">Thương hiệu</a>
-    <a href="#support">Hỗ trợ</a>
+    <a href="about.html">Về MODU</a>
+    <a href="blog/index.html">Blog MODU</a>
+    <a href="#support">Hỗ trợ khách hàng</a>
   </nav>
 
-  <!-- ================= HERO SECTION ================= -->
-  <section class="hero-section" id="heroSection">
-    <!-- Atmospheric bottom clouds blend -->
-    <div class="hero-clouds-overlay"></div>
+  <!-- ================= FIXED SIDE PAGE INDICATOR (01, 02, 03) ================= -->
+  <aside class="side-page-nav" id="sidePageNav" aria-label="Chuyển nhanh giữa các phần">
+    <a href="#page-hero" class="side-dot active" data-page="1" aria-label="Phần 1: Bộ sưu tập">
+      <span class="dot-num">01</span>
+      <span class="dot-tooltip">Bộ sưu tập</span>
+    </a>
+    <a href="#page-personalize" class="side-dot" data-page="2" aria-label="Phần 2: Cá nhân hóa">
+      <span class="dot-num">02</span>
+      <span class="dot-tooltip">Cá nhân hóa</span>
+    </a>
+    <a href="#page-checkout" class="side-dot" data-page="3" aria-label="Phần 3: Thanh toán">
+      <span class="dot-num">03</span>
+      <span class="dot-tooltip">Thanh toán</span>
+    </a>
+  </aside>
 
-    <!-- Ripple circles behind the bottle -->
-    <div class="ripple-stage" id="rippleStage">
-      <div class="ripple-circle r1"></div>
-      <div class="ripple-circle r2"></div>
-      <div class="ripple-circle r3"></div>
-    </div>
+  <!-- ================= MAIN SCROLL CONTAINER ================= -->
+  <main class="modu-pages-container" id="moduPagesContainer">
 
-    <!-- HERO VISUAL: Hand holding bottle or Studio Bottle -->
-    <div class="hero-visual-container" id="heroVisual">
-      <!-- Main Lifestyle Photo: High-resolution crisp Hand holding Mint bottle -->
-      <img 
-        src="assets/hero-hand-crisp.png" 
-        alt="Bình giữ nhiệt MODU cầm trên tay" 
-        class="hero-hand-image" 
-        id="heroHandImg"
-      >
-
-      <!-- Alternate Studio Bottle (when clicking different colors) -->
-      <img 
-        src="assets/bottle-mint.png" 
-        alt="Bình MODU dạng studio" 
-        class="hero-studio-bottle" 
-        id="heroStudioImg"
-      >
-
-      <!-- Attached Bottle Charm Anchor (pinned to collar) -->
-      <div class="bottle-charm-anchor hero-charm-anchor" id="heroBottleCharmAnchor" style="display: none;">
-        <div class="attached-charm-chain"></div>
-        <div class="attached-charm-pendant" id="heroAttachedCharmPendant">
-          <img src="charm/charm-bear.png" alt="Charm đã gắn" class="pendant-real-img">
-        </div>
-        <div class="attached-charm-tag" id="heroAttachedCharmTag">CHARM PINNED</div>
-      </div>
-
-      <!-- Mode Switcher Buttons (Lifestyle Hand vs Studio 360) -->
-      <div class="hero-mode-switch">
-        <button type="button" class="btn-mode active" id="modeLifestyleBtn" title="Xem trên tay thật">
-          Lifestyle
-        </button>
-        <button type="button" class="btn-mode" id="modeStudioBtn" title="Xem 360 Studio">
-          Studio
-        </button>
-      </div>
-    </div>
-
-    <!-- HERO LEFT COLUMN: Typography, CTA, and Color Explorer -->
-    <div class="hero-left-col">
-      <span class="hero-brand-tag">M O D I F Y   +   Y O U</span>
+    <!-- ===================================================================
+         PAGE 1: SHOWCASE HERO SECTION (Matches page 1.png)
+         =================================================================== -->
+    <section class="page-section hero-page-section" id="page-hero" aria-label="Giới thiệu bình MODU">
       
-      <h1 class="hero-main-title">
-        Tự thiết kế.<br>
-        Tự thể hiện<br>
-        chất riêng.
-      </h1>
-
-      <p class="hero-subtitle">
-        Chọn màu pastel, khắc tên laser,<br>
-        rồi mở túi mù charm đúng vibe của bạn.
-      </p>
-
-      <div class="hero-cta-group">
-        <button class="btn-customize" id="openCustomizerBtn">
-          <span>Tùy chỉnh bình của bạn</span>
-          <svg viewBox="0 0 20 20" fill="none">
-            <path d="M4 10H16M11 5L16 10L11 15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </button>
+      <!-- Ripple circles behind the bottle -->
+      <div class="ripple-stage" id="rippleStage">
+        <div class="ripple-circle r1"></div>
+        <div class="ripple-circle r2"></div>
+        <div class="ripple-circle r3"></div>
       </div>
 
-      <!-- GLASSMORPHISM COLOR EXPLORER CARD (Matching Image 2 exactly) -->
-      <div class="color-explorer-card" id="colorExplorerCard">
-        <span class="card-vertical-label">KHÁM PHÁ MÀU</span>
+      <!-- HERO VISUAL: Real lifestyle hand holding Mint bottle against sky -->
+      <div class="hero-visual-container" id="heroVisual">
+        <img 
+          src="assets/hero-hand-crisp.png" 
+          alt="Tay cầm bình giữ nhiệt MODU xanh bạc hà dưới trời nắng" 
+          class="hero-hand-image" 
+          id="heroHandImg"
+        >
+        <!-- Alternate studio bottle view for color exploration -->
+        <img 
+          src="assets/bottle-mint.png" 
+          alt="Bình MODU trong chế độ xem sản phẩm" 
+          class="hero-studio-bottle" 
+          id="heroStudioImg"
+          style="display: none;"
+        >
+      </div>
 
-        <div class="card-bottles-grid">
-          <!-- Bottle 1: Mint (Selected) -->
-          <div class="bottle-col active" data-color="mint" title="Xanh Sage">
-            <div class="bottle-preview-wrap">
-              <div class="selection-circle-cap"></div>
-              <img src="assets/bottle-mint.png" alt="Xanh Sage" class="card-bottle-img">
+      <!-- HERO LEFT COLUMN: Tag, Title, Desc, CTA and Color Explorer Card -->
+      <div class="hero-left-col">
+        <span class="hero-brand-tag">TỰ THIẾT KẾ BỞI BẠN</span>
+        
+        <h1 class="hero-main-title">
+          Bình giữ nhiệt<br>
+          cho mọi<br>
+          phong cách.
+        </h1>
+
+        <p class="hero-subtitle">
+          Thiết kế tinh tế. Đồng hành cả ngày.<br>
+          Thỏa sức sáng tạo chiếc bình của bạn.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#page-personalize" class="btn-customize-cta btn-pill-lime" id="heroCustomizeCtaBtn">
+            <span>Tự thiết kế</span>
+            <svg class="btn-arrow-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12C9.6667 12 14.3333 12 19 12M12 5C14.3333 7.3333 16.6667 9.6667 19 12C16.6667 14.3333 14.3333 16.6667 12 19"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- GLASSMORPHISM COLOR EXPLORER CARD (Matching page 1.png exactly) -->
+        <div class="color-explorer-card" id="colorExplorerCard">
+          <span class="card-vertical-label">KHÁM PHÁ MÀU</span>
+
+          <div class="card-bottles-grid">
+            <!-- Bottle 1: Mint -->
+            <div class="bottle-col active" data-color="mint" title="Xanh bạc hà" role="button" tabindex="0">
+              <div class="bottle-preview-wrap">
+                <div class="selection-circle-cap"></div>
+                <img src="assets/bottle-mint.png" alt="Bình MODU xanh bạc hà" class="card-bottle-img">
+              </div>
+              <button type="button" class="card-color-dot" style="--c: #9ec5b6;" title="Xanh bạc hà" aria-label="Chọn màu xanh bạc hà"></button>
             </div>
-            <button class="card-color-dot" style="--c: #9ec5b6;" title="Xanh Sage" aria-label="Xanh Sage"></button>
-          </div>
 
-          <!-- Bottle 2: White -->
-          <div class="bottle-col" data-color="white" title="Trắng Mây">
-            <div class="bottle-preview-wrap">
-              <img src="assets/bottle-white.png" alt="Trắng Mây" class="card-bottle-img">
+            <!-- Bottle 2: White -->
+            <div class="bottle-col" data-color="white" title="Trắng" role="button" tabindex="0">
+              <div class="bottle-preview-wrap">
+                <img src="assets/bottle-white.png" alt="Bình MODU trắng kem" class="card-bottle-img">
+              </div>
+              <button type="button" class="card-color-dot" style="--c: #f4f0ea;" title="Trắng kem" aria-label="Chọn màu trắng"></button>
             </div>
-            <button class="card-color-dot" style="--c: #f4f0ea;" title="Trắng Mây" aria-label="Trắng Mây"></button>
-          </div>
 
-          <!-- Bottle 3: Pink -->
-          <div class="bottle-col" data-color="pink" title="Hồng Blush">
-            <div class="bottle-preview-wrap">
-              <img src="assets/bottle-pink.png" alt="Hồng Blush" class="card-bottle-img">
+            <!-- Bottle 3: Pink -->
+            <div class="bottle-col" data-color="pink" title="Hồng" role="button" tabindex="0">
+              <div class="bottle-preview-wrap">
+                <img src="assets/bottle-pink.png" alt="Bình MODU hồng phấn" class="card-bottle-img">
+              </div>
+              <button type="button" class="card-color-dot" style="--c: #f4b8b4;" title="Hồng phấn" aria-label="Chọn màu hồng"></button>
             </div>
-            <button class="card-color-dot" style="--c: #f4b8b4;" title="Hồng Blush" aria-label="Hồng Blush"></button>
-          </div>
 
-          <!-- Bottle 4: Sky Blue -->
-          <div class="bottle-col" data-color="blue" title="Xanh Trời">
-            <div class="bottle-preview-wrap">
-              <img src="assets/bottle-blue.png" alt="Xanh Trời" class="card-bottle-img">
+            <!-- Bottle 4: Blue -->
+            <div class="bottle-col" data-color="blue" title="Xanh trời" role="button" tabindex="0">
+              <div class="bottle-preview-wrap">
+                <img src="assets/bottle-blue.png" alt="Bình MODU xanh trời" class="card-bottle-img">
+              </div>
+              <button type="button" class="card-color-dot" style="--c: #82b9d2;" title="Xanh trời" aria-label="Chọn màu xanh trời"></button>
             </div>
-            <button class="card-color-dot" style="--c: #82b9d2;" title="Xanh Trời" aria-label="Xanh Trời"></button>
-          </div>
 
-          <!-- Bottle 5: Black -->
-          <div class="bottle-col" data-color="black" title="Đen Obsidian">
-            <div class="bottle-preview-wrap">
-              <img src="assets/bottle-black.png" alt="Đen Obsidian" class="card-bottle-img">
+            <!-- Bottle 5: Black -->
+            <div class="bottle-col" data-color="black" title="Đen nhám" role="button" tabindex="0">
+              <div class="bottle-preview-wrap">
+                <img src="assets/bottle-black.png" alt="Bình MODU đen nhám" class="card-bottle-img">
+              </div>
+              <button type="button" class="card-color-dot" style="--c: #33373b;" title="Đen nhám" aria-label="Chọn màu đen"></button>
             </div>
-            <button class="card-color-dot" style="--c: #33373b;" title="Đen Obsidian" aria-label="Đen Obsidian"></button>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- HERO RIGHT COLUMN: Seal Stamp and Description -->
-    <div class="hero-right-col">
-      <!-- Rotating Circular Stamp -->
-      <div class="circular-seal-badge" title="Cá nhân hóa MODU">
-        <svg viewBox="0 0 160 160" class="seal-svg-wrap">
-          <defs>
-            <!-- Clockwise circle starting at bottom (80, 142) so top is at 50% offset and text reads upright -->
-            <path id="seal-circle-path" d="M 80, 142 A 62,62 0 1,1 80.001, 142" />
-          </defs>
-          <circle cx="80" cy="80" r="69" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.2" stroke-dasharray="2.5 3"/>
-          <text class="seal-text">
-            <textPath href="#seal-circle-path" startOffset="50%" text-anchor="middle">
-              TUY CHINH GU RIENG • MO CHARM BAT NGO •
-            </textPath>
-          </text>
-        </svg>
-        <div class="seal-center-icon">
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M12 3C12 3 6.5 10 6.5 14.5A5.5 5.5 0 0 0 17.5 14.5C17.5 10 12 3 12 3Z" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"/>
+      <!-- HERO RIGHT COLUMN: Rotating Seal Stamp & Lifestyle Feature Text -->
+      <div class="hero-right-col">
+        <!-- Rotating Circular Badge: GOOD HYDRATION • BRIGHTER DAYS • -->
+        <div class="circular-seal-badge" title="Đủ nước mỗi ngày, thêm năng lượng">
+          <svg viewBox="0 0 160 160" class="seal-svg-wrap" aria-hidden="true">
+            <defs>
+              <path id="seal-path-hero" d="M 80, 142 A 62,62 0 1,1 80.001, 142" />
+            </defs>
+            <circle cx="80" cy="80" r="69" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.2" stroke-dasharray="2.5 3"/>
+            <text class="seal-text">
+              <textPath href="#seal-path-hero" startOffset="50%" text-anchor="middle">
+                ĐỦ NƯỚC • THÊM NĂNG LƯỢNG •
+              </textPath>
+            </text>
           </svg>
-        </div>
-      </div>
-
-      <!-- Right Description Text -->
-      <p class="hero-right-desc">
-        A daily bottle that<br>
-        works like a fashion<br>
-        accessory, ready for<br>
-        class, work, gym, or cafe.
-      </p>
-
-      <div class="right-dash-divider"></div>
-    </div>
-  </section>
-
-  <!-- ================= FEATURES SECTION ================= -->
-  <section class="features-section" id="bottles">
-    <div class="section-header-center">
-      <span class="section-eyebrow">BÌNH GIỮ NHIỆT CÁ NHÂN HÓA</span>
-      <h2 class="section-title">Không Chỉ Là Một Chiếc Bình</h2>
-      <p class="section-desc">MODU biến bình giữ nhiệt hằng ngày thành phụ kiện lifestyle: tự phối màu, khắc dấu ấn cá nhân và sưu tầm charm theo phong cách riêng.</p>
-    </div>
-
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon-box">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 3C8 7 6 10 6 14a6 6 0 0 0 12 0c0-4-2-7-6-11Z"/>
-          </svg>
-        </div>
-        <h3>500ml hoặc 750ml</h3>
-        <p>Chọn dáng thon gọn để đi học, đi làm hoặc dáng có quai cầm cho những ngày di chuyển nhiều.</p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon-box">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 20h16M6 16l9.5-9.5 2 2L8 18H6v-2Z"/>
-            <path d="M14 8l2 2"/>
-          </svg>
-        </div>
-        <h3>Khắc Tên Laser</h3>
-        <p>Thêm tên, chữ cái đầu hoặc câu quote ngắn để chiếc bình trở thành phiên bản riêng của bạn.</p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon-box">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7"/>
-            <path d="M4 8h16v4H4zM12 21V8M12 8C12 5 8 5 8 8M12 8c0-3 4-3 4 0"/>
-          </svg>
-        </div>
-        <h3>Túi Mù Charm</h3>
-        <p>Mỗi charm là một khoảnh khắc unbox bất ngờ, tạo cảm giác sưu tầm và làm mới chiếc bình.</p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon-box">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <h3>Đẹp, Hợp Giá</h3>
-        <p>Hướng đến học sinh, sinh viên và người đi làm muốn một sản phẩm có gu nhưng vẫn dễ tiếp cận.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= CUSTOMIZE JOURNEY SECTION ================= -->
-  <section class="journey-section" id="customize">
-    <div class="journey-content">
-      <div class="journey-copy">
-        <span class="section-eyebrow">TỰ THIẾT KẾ ONLINE</span>
-        <h2 class="section-title">Từ Bình Trơn Thành Dấu Ấn Riêng</h2>
-        <p class="section-desc">MODU được xây dựng quanh trải nghiệm đồng sáng tạo: chọn dáng bình, phối màu, khắc tên, xem trước thành phẩm và hoàn thiện bằng charm.</p>
-      </div>
-
-      <div class="journey-steps" aria-label="Quy trình tùy chỉnh MODU">
-        <div class="journey-step">
-          <span>01</span>
-          <h3>Chọn Dáng Bình</h3>
-          <p>500ml thon gọn hoặc 750ml có quai cầm, tùy theo nhịp sống của bạn.</p>
-        </div>
-        <div class="journey-step">
-          <span>02</span>
-          <h3>Phối Màu</h3>
-          <p>Các gam pastel và matte dễ phối với outfit đi học, đi làm, đi chơi.</p>
-        </div>
-        <div class="journey-step">
-          <span>03</span>
-          <h3>Khắc Dấu Ấn</h3>
-          <p>Khắc tên, ký tự cá nhân hoặc thông điệp ngắn bằng laser sắc nét.</p>
-        </div>
-        <div class="journey-step">
-          <span>04</span>
-          <h3>Mở Túi Mù Charm</h3>
-          <p>Sưu tầm charm ngẫu nhiên và thay đổi diện mạo bình khi mood của bạn đổi.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= VIRTUAL BLIND BOX CHARM UNBOXING SECTION ================= -->
-  <section class="blindbox-section" id="blindbox">
-    <div class="section-header-center">
-      <span class="section-eyebrow">TRẢI NGHIỆM ĐỘC QUYỀN • KHUI TÚI MÙ VIRTUAL</span>
-      <h2 class="section-title">Khui Túi Mù Charm - Rinh Vibe Bất Ngờ</h2>
-      <p class="section-desc">Mỗi chiếc charm là một mảnh ghép thể hiện cá tính riêng. Trải nghiệm bóc túi mù 3D chân thực, mở khóa trọn bộ 8 mẫu charm giới hạn và đính trực tiếp lên bình MODU!</p>
-    </div>
-
-    <div class="blindbox-container">
-      <!-- Left Column: Blind Bag Interactive Stage -->
-      <div class="blindbag-stage-card" id="blindbagInteractiveArea">
-        <div class="blindbag-stage-topbar">
-          <div class="stage-tag-badge">
-            <span class="pulse-dot"></span> MODU MYSTERY POUCH
+          <div class="seal-center-icon">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#ffffff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22C15.866 22 19 18.866 19 15C19 13 18 11.1 16 9.5C14 7.9 12.5 5.5 12 3C11.5 5.5 10 7.9 8 9.5C6 11.1 5 13 5 15C5 18.866 8.134 22 12 22Z"/>
+            </svg>
           </div>
-          <button type="button" class="sound-toggle-btn active" id="blindboxSoundToggle" title="Bật/Tắt âm thanh hiệu ứng">
-            <span>Âm thanh:</span> <span id="soundStatusText">BẬT</span>
+        </div>
+
+        <!-- Description Paragraph -->
+        <p class="hero-right-desc">
+          Dễ cầm, dễ yêu.<br>
+          Lớp sơn tĩnh điện cao cấp<br>
+          mang vẻ đẹp tinh tế<br>
+          và cảm giác cầm chắc tay.
+        </p>
+
+        <div class="right-dash-divider"></div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         PAGE 2: PERSONALIZE YOUR BOTTLE SUITE (Matches page 2.png)
+         =================================================================== -->
+    <section class="page-section personalize-page-section" id="page-personalize" aria-label="Cá nhân hóa bình MODU của bạn">
+      
+      <!-- Ripple circles behind the interactive bottle -->
+      <div class="ripple-stage ripple-stage-personalize">
+        <div class="ripple-circle r1"></div>
+        <div class="ripple-circle r2"></div>
+        <div class="ripple-circle r3"></div>
+      </div>
+
+      <!-- LEFT COLUMN: Headline, Story & 3 Feature Badges -->
+      <div class="personalize-left-col">
+        <span class="hero-brand-tag">TỰ THIẾT KẾ BỞI BẠN</span>
+
+        <h2 class="section-big-title">
+          Cá nhân hóa<br>
+          bình của bạn.
+        </h2>
+
+        <p class="hero-subtitle">
+          Chọn màu sắc, nắp, charm và khắc laser.<br>
+          Tạo dấu ấn phong cách riêng cùng MODU.
+        </p>
+
+        <div class="personalize-cta-wrap">
+          <button type="button" class="btn-customize-cta btn-pill-lime" id="btnPersonalizeScrollToConfig">
+            <span>Thiết kế ngay</span>
+            <svg class="btn-arrow-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12C9.6667 12 14.3333 12 19 12M12 5C14.3333 7.3333 16.6667 9.6667 19 12C16.6667 14.3333 14.3333 16.6667 12 19"></path>
+            </svg>
           </button>
         </div>
 
-        <div class="blindbag-visual-stage">
-          <!-- Canvas for 60fps Confetti Particles -->
-          <canvas id="blindboxConfettiCanvas" class="blindbox-confetti-canvas"></canvas>
-
-          <!-- Lighting Effects -->
-          <div class="shockwave-ring" id="shockwaveRing"></div>
-          <div class="bag-radial-glow" id="bagRadialGlow"></div>
-          <div class="sunburst-rays" id="sunburstRays"></div>
-
-          <!-- Mystery Blind Bag Container -->
-          <div class="mystery-bag-wrap" id="mysteryBagWrap" role="button" tabindex="0" aria-label="Bấm vào để xé mở túi mù">
-            <div class="mystery-bag" id="mysteryBag">
-              <!-- Top Tear Strip Notch -->
-              <div class="bag-tear-notch left"></div>
-              <div class="bag-tear-notch right"></div>
-              <div class="bag-tear-line">
-                <span class="tear-dashes">- - - - - - - - - - - - - - - - - -</span>
-                <span class="tear-label">TEAR HERE</span>
-              </div>
-
-              <!-- Pouch Header Brand -->
-              <div class="bag-brand-pill">MODU COLLECTIBLES</div>
-
-              <!-- Center Holographic Emblem -->
-              <div class="bag-center-emblem">
-                <div class="bag-mystery-question">?</div>
-                <div class="bag-title-series">SERIES 01</div>
-                <div class="bag-rarity-hint">COMMON • RARE • SECRET</div>
-              </div>
-
-              <!-- Bottom Pattern Stitches -->
-              <div class="bag-bottom-seal">
-                <span>/// 100% BLIND BOX EXPERIENCE ///</span>
-              </div>
-
-              <!-- Flap rip animation element -->
-              <div class="bag-torn-flap" id="bagTornFlap"></div>
-              <!-- Light beam bursting out -->
-              <div class="bag-light-beam" id="bagLightBeam"></div>
+        <!-- 3 Feature Icon Pills (Matching page 2.png with Morphicons) -->
+        <div class="feature-badges-row">
+          <div class="feature-badge-item">
+            <div class="feature-icon-circle" title="Gu của bạn, bình của bạn">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22C15.866 22 19 18.866 19 15C19 13 18 11.1 16 9.5C14 7.9 12.5 5.5 12 3C11.5 5.5 10 7.9 8 9.5C6 11.1 5 13 5 15C5 18.866 8.134 22 12 22Z"/>
+              </svg>
             </div>
+            <span class="feature-badge-label">GU CỦA BẠN<br>BÌNH CỦA BẠN</span>
           </div>
 
-          <!-- Flying Out Charm Visual -->
-          <div class="revealed-charm-flyout" id="revealedCharmFlyout">
-            <div class="charm-flyout-visual" id="charmFlyoutVisual"></div>
+          <div class="feature-badge-item">
+            <div class="feature-icon-circle" title="Tinh tế từng chi tiết">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 9.5C2 7.2219 3.4044 5.1797 5.5316 4.3644C7.6588 3.5491 10.0684 4.1295 11.591 5.824C11.6969 5.9372 11.845 6.0015 12 6.0015C12.155 6.0015 12.3031 5.9372 12.409 5.824C13.9271 4.1182 16.3426 3.5302 18.4749 4.3475C20.6071 5.1647 22.0109 7.2165 22 9.5C22 11.79 20.5 13.5 19 15C17.1693 16.771 15.3387 18.542 13.508 20.313C13.1311 20.7459 12.5863 20.996 12.0123 20.9996C11.4383 21.0033 10.8904 20.7601 10.508 20.332C8.672 18.5547 6.836 16.7773 5 15C3.5 13.5 2 11.8 2 9.5"/>
+              </svg>
+            </div>
+            <span class="feature-badge-label">TINH TẾ<br>TỪNG CHI TIẾT</span>
           </div>
-        </div>
 
-        <!-- Stage Bottom Action Bar -->
-        <div class="blindbag-action-bar">
-          <button type="button" class="btn-unbox-primary" id="btnUnboxPrimary">
-            <span id="btnUnboxText">XÉ TÚI MÙ NGAY (Còn 1 lần thử)</span>
-          </button>
-          
-          <div class="blindbag-sub-actions">
-            <span class="tries-indicator">Số lượt: <strong id="freeTriesCount">1</strong></span>
-            <button type="button" class="btn-refill-tries" id="btnRefillTries">+ Nạp thêm lượt thử</button>
+          <div class="feature-badge-item">
+            <div class="feature-icon-circle" title="Thể hiện chính bạn">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11.017 2.814C11.1054 2.3407 11.5185 1.9976 12 1.9976C12.4815 1.9976 12.8946 2.3407 12.983 2.814C13.3333 4.6667 13.6837 6.5193 14.034 8.372C14.1868 9.1807 14.8193 9.8132 15.628 9.966C17.4807 10.3163 19.3333 10.6667 21.186 11.017C21.6593 11.1054 22.0024 11.5185 22.0024 12C22.0024 12.4815 21.6593 12.8946 21.186 12.983C19.3333 13.3333 17.4807 13.6837 15.628 14.034C14.8193 14.1868 14.1868 14.8193 14.034 15.628C13.6837 17.4807 13.3333 19.3333 12.983 21.186C12.8946 21.6593 12.4815 22.0024 12 22.0024C11.5185 22.0024 11.1054 21.6593 11.017 21.186C10.6667 19.3333 10.3163 17.4807 9.966 15.628C9.8132 14.8193 9.1807 14.1868 8.372 14.034C6.5193 13.6837 4.6667 13.3333 2.814 12.983C2.3407 12.8946 1.9976 12.4815 1.9976 12C1.9976 11.5185 2.3407 11.1054 2.814 11.017C4.6667 10.6667 6.5193 10.3163 8.372 9.966C9.1807 9.8132 9.8132 9.1807 9.966 8.372C10.3163 6.5193 10.6667 4.6667 11.017 2.814ZM20 2C20 3.3333 20 4.6667 20 6M22 4C20.6667 4 19.3333 4 18 4M6 20C6 21.1046 5.1046 22 4 22C2.8954 22 2 21.1046 2 20C2 18.8954 2.8954 18 4 18C5.1046 18 6 18.8954 6 20Z"/>
+              </svg>
+            </div>
+            <span class="feature-badge-label">THỂ HIỆN<br>CHÍNH BẠN</span>
           </div>
         </div>
       </div>
 
-      <!-- Right Column: 8 Charms Collection Showcase -->
-      <div class="charms-collection-box">
-        <div class="collection-header">
-          <div class="collection-title-wrap">
-            <h3>Bộ Sưu Tập 8 Charm MODU Series 01</h3>
-            <span class="collection-edition-pill">Limited Edition</span>
-          </div>
-          
-          <div class="collection-progress-wrap">
-            <div class="collection-progress-track">
-              <div class="collection-progress-fill" id="collectionProgressFill" style="width: 0%;"></div>
+      <!-- CENTER VISUAL: Live Interactive MODU Bottle with Laser Engraving & Hanging Charm -->
+      <div class="personalize-visual-center">
+        <div class="interactive-bottle-wrapper" id="interactiveBottleWrapper">
+          <!-- Main Bottle Body Image (Tilted ~18deg matching reference) -->
+          <img 
+            src="assets/bottle-mint.png" 
+            alt="Bình giữ nhiệt MODU đã cá nhân hóa" 
+            class="interactive-bottle-body" 
+            id="interactiveBottleBody"
+          >
+
+          <!-- Swappable Lid Layer (allows mixing bottle body color with different lid handle color) -->
+          <img 
+            src="assets/lids/lid-mint.png" 
+            alt="Nắp bình MODU" 
+            class="interactive-bottle-lid" 
+            id="interactiveBottleLid"
+          >
+
+          <!-- Live Precision Laser Engraving Overlay -->
+          <div class="live-engrave-overlay font-brittany" id="liveEngraveText">
+            <div class="engrave-container">
+              <div class="engrave-name-row">
+                <svg class="engrave-svg" viewBox="0 0 180 50" preserveAspectRatio="xMidYMid meet">
+                  <defs>
+                    <!-- 4% bend arc: 160px span with 7px sagitta = 4.37% bend -->
+                    <path id="curvePath2" d="M 10 33 Q 90 26 170 33" fill="transparent" />
+                  </defs>
+                  <text class="engrave-text-curved">
+                    <textPath id="engraveTextPath2" href="#curvePath2" startOffset="50%" text-anchor="middle">Olivia</textPath>
+                  </text>
+                </svg>
+              </div>
+              <div class="engrave-heart-row" id="liveEngraveHeartWrap">
+                <svg class="engrave-heart-svg" viewBox="0 0 24 24" width="13" height="13" fill="none">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="#617B78" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
             </div>
-            <span class="collection-progress-text" id="collectionProgressText">0 / 8 mẫu charm (0%)</span>
+          </div>
+
+          <!-- Live Hanging Charm with Chain Pinned to Handle Loop -->
+          <div class="live-charm-hanger" id="liveCharmHanger">
+            <img 
+              src="assets/charms/charm_daisy_hanging.png" 
+              alt="Phụ kiện hoa cúc treo bình" 
+              class="hanging-charm-img" 
+              id="hangingCharmImg"
+            >
           </div>
         </div>
+      </div>
 
-        <!-- 8 Charms Grid (Rendered dynamically by script.js with data from charm/) -->
-        <div class="charms-grid" id="charmsGrid"></div>
+      <!-- RIGHT COLUMN: 4-Step Customizer Glassmorphism Suite & Add to Cart -->
+      <div class="personalize-right-col">
+        <div class="customizer-panel-card" id="customizerPanelCard">
+          
+          <!-- STEP 1: BOTTLE COLOR -->
+          <div class="config-step-block">
+            <div class="config-step-header">
+              <div class="step-num-title">
+                <span class="step-num-pill">1</span>
+                <span class="step-title-text">MÀU BÌNH</span>
+              </div>
+              <span class="step-current-name" id="step1ColorName">Xanh bạc hà</span>
+            </div>
 
-        <div class="collection-footer-tip">
-          <span><strong>Gợi ý:</strong> Bấm vào từng charm để xem thông tin độ hiếm, câu chuyện phong cách hoặc gắn thử lên bình.</span>
+            <div class="color-swatches-row">
+              <button type="button" class="swatch-btn active" data-color="mint" data-name="Xanh bạc hà" aria-label="Xanh bạc hà" style="--swatch-c: #9ec5b6;"></button>
+              <button type="button" class="swatch-btn" data-color="white" data-name="Trắng kem" aria-label="Trắng kem" style="--swatch-c: #f4f0ea;"></button>
+              <button type="button" class="swatch-btn" data-color="pink" data-name="Hồng phấn" aria-label="Hồng phấn" style="--swatch-c: #f4b8b4;"></button>
+              <button type="button" class="swatch-btn" data-color="blue" data-name="Xanh trời" aria-label="Xanh trời" style="--swatch-c: #82b9d2;"></button>
+              <button type="button" class="swatch-btn" data-color="black" data-name="Đen nhám" aria-label="Đen nhám" style="--swatch-c: #33373b;"></button>
+            </div>
+          </div>
+
+          <!-- STEP 2: ENGRAVING -->
+          <div class="config-step-block">
+            <div class="config-step-header">
+              <div class="step-num-title">
+                <span class="step-num-pill">2</span>
+                <span class="step-title-text">KHẮC TÊN</span>
+              </div>
+              <span class="step-current-name" id="step3EngraveName">Olivia ♡</span>
+            </div>
+
+            <!-- Input Box with Character Counter -->
+            <div class="engrave-input-container">
+              <input 
+                type="text" 
+                id="inputEngrave" 
+                maxlength="16" 
+                value="Olivia" 
+                placeholder="Nhập tên hoặc lời nhắn..." 
+                class="field-engrave-input"
+                aria-label="Nội dung khắc laser"
+              >
+              <span class="engrave-counter-badge" id="engraveCounterBadge">6/16</span>
+            </div>
+
+            <!-- Biểu tượng trái tim bên dưới nét riêng (Morphicons Spring Morph) -->
+            <div class="heart-option-row">
+              <label class="heart-toggle-label" for="toggleHeartStroke">
+                <input type="checkbox" id="toggleHeartStroke" class="heart-checkbox" checked>
+                <span class="heart-toggle-custom">
+                  <svg class="morph-svg" id="heartToggleSvg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <path id="heartTogglePath" d="M2 9.5C2 7.2219 3.4044 5.1797 5.5316 4.3644C7.6588 3.5491 10.0684 4.1295 11.591 5.824C11.6969 5.9372 11.845 6.0015 12 6.0015C12.155 6.0015 12.3031 5.9372 12.409 5.824C13.9271 4.1182 16.3426 3.5302 18.4749 4.3475C20.6071 5.1647 22.0109 7.2165 22 9.5C22 11.79 20.5 13.5 19 15C17.1693 16.771 15.3387 18.542 13.508 20.313C13.1311 20.7459 12.5863 20.996 12.0123 20.9996C11.4383 21.0033 10.8904 20.7601 10.508 20.332C8.672 18.5547 6.836 16.7773 5 15C3.5 13.5 2 11.8 2 9.5"></path>
+                  </svg>
+                </span>
+                <span class="heart-label-text">Trái tim nét riêng bên dưới</span>
+              </label>
+            </div>
+
+            <!-- Font Style Picker -->
+            <div class="font-styles-wrap">
+              <span class="font-style-label">KIỂU CHỮ (FONT BRITTANY SIGNATURE)</span>
+              <div class="font-buttons-grid">
+                <button type="button" class="font-btn active" data-font="brittany" title="Brittany Signature (Chữ ký)"><i style="font-family: 'Brittany Signature', cursive; font-size: 20px;">Aa</i></button>
+                <button type="button" class="font-btn" data-font="modern" title="Modern Sans (Hiện đại)"><span style="font-family: var(--font-display); font-weight: 700; font-size: 14px;">Aa</span></button>
+                <button type="button" class="font-btn" data-font="serif" title="Classic Serif (Cổ điển)"><em style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 15px;">Aa</em></button>
+                <button type="button" class="font-btn" data-font="bold" title="Athletic Bold (Thể thao)"><strong style="font-family: var(--font-display); font-weight: 900; font-size: 14px;">Aa</strong></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 3: CHARM (OPTIONAL) -->
+          <div class="config-step-block">
+            <div class="config-step-header">
+              <div class="step-num-title">
+                <span class="step-num-pill">3</span>
+                <span class="step-title-text">PHỤ KIỆN (TÙY CHỌN)</span>
+              </div>
+              <span class="step-current-name" id="step4CharmName">Hoa cúc</span>
+            </div>
+
+            <div class="charm-buttons-row">
+              <button type="button" class="charm-btn active" data-charm="daisy" data-name="Hoa cúc" title="Hoa cúc">
+                <img src="assets/ui/btn_charm_daisy.png" alt="Phụ kiện hoa cúc">
+              </button>
+              <button type="button" class="charm-btn" data-charm="heart" data-name="Trái tim hồng" title="Trái tim hồng">
+                <img src="assets/ui/btn_charm_heart.png" alt="Phụ kiện trái tim">
+              </button>
+              <button type="button" class="charm-btn" data-charm="letter_m" data-name="Chữ M bạc" title="Chữ M bạc">
+                <img src="assets/ui/btn_charm_letter_m.png" alt="Phụ kiện chữ M">
+              </button>
+              <button type="button" class="charm-btn" data-charm="smiley" data-name="Mặt cười" title="Mặt cười">
+                <img src="assets/ui/btn_charm_smiley.png" alt="Phụ kiện mặt cười">
+              </button>
+              <button type="button" class="charm-btn" data-charm="blue_flower" data-name="Hoa cúc xanh" title="Hoa cúc xanh">
+                <img src="assets/ui/btn_charm_blue_flower.png" alt="Phụ kiện hoa xanh">
+              </button>
+            </div>
+          </div>
+
+          <!-- STICKY ACTION BAR: PRICE & ADD TO CART (Morphicons Integration) -->
+          <div class="customizer-action-bar">
+            <div class="price-spec-block">
+              <span class="spec-label">Bình giữ nhiệt MODU</span>
+              <strong class="spec-price" id="customizerPrice">$34.00</strong>
+            </div>
+
+            <button type="button" class="btn-add-cart-lime" id="btnAddToCart">
+              <svg class="morph-svg btn-cart-morph" id="addCartBtnSvg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path id="addCartBtnIconPath" d="M16 10C16 12.2091 14.2091 14 12 14C9.7909 14 8 12.2091 8 10M3.103 6.034C9.0343 6.034 14.9657 6.034 20.897 6.034M3.4 5.467C3.1404 5.8132 3 6.2343 3 6.667C3 11.1113 3 15.5557 3 20C3 21.1046 3.8954 22 5 22C9.6667 22 14.3333 22 19 22C20.1046 22 21 21.1046 21 20C21 15.5557 21 11.1113 21 6.667C21 6.2343 20.8596 5.8132 20.6 5.467C19.9333 4.578 19.2667 3.689 18.6 2.8C18.2223 2.2964 17.6295 2 17 2C13.6667 2 10.3333 2 7 2C6.3705 2 5.7777 2.2964 5.4 2.8C4.7333 3.689 4.0667 4.578 3.4 5.467Z"></path>
+              </svg>
+              <span>Thêm vào giỏ</span>
+              <svg class="btn-arrow-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12C9.6667 12 14.3333 12 19 12M12 5C14.3333 7.3333 16.6667 9.6667 19 12C16.6667 14.3333 14.3333 16.6667 12 19"></path>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         PAGE 3: CHECKOUT YOUR BOTTLE SUITE (Matches page 3.png)
+         =================================================================== -->
+    <section class="page-section checkout-page-section" id="page-checkout" aria-label="Kiểm tra và thanh toán bình MODU">
+      
+      <!-- Ripple circles behind the bottle -->
+      <div class="ripple-stage ripple-stage-checkout">
+        <div class="ripple-circle r1"></div>
+        <div class="ripple-circle r2"></div>
+        <div class="ripple-circle r3"></div>
+      </div>
+
+      <!-- LEFT COLUMN: Headline, Story & 3 Trust Badges -->
+      <div class="checkout-left-col">
+        <span class="hero-brand-tag">TỰ THIẾT KẾ BỞI BẠN</span>
+
+        <h2 class="section-big-title">
+          Thanh toán<br>
+          bình của bạn.
+        </h2>
+
+        <p class="hero-subtitle">
+          Kiểm tra chiếc bình đã thiết kế và<br>
+          hoàn tất đơn hàng để sở hữu bình riêng.
+        </p>
+
+        <div class="checkout-cta-wrap">
+          <button type="button" class="btn-customize-cta btn-pill-lime" id="btnCheckoutPayNowTrigger">
+            <span>Thanh toán</span>
+            <svg class="btn-arrow-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12C9.6667 12 14.3333 12 19 12M12 5C14.3333 7.3333 16.6667 9.6667 19 12C16.6667 14.3333 14.3333 16.6667 12 19"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- 3 Trust Badges (FREE SHIPPING, SECURE PAYMENT, A MORE PERSONAL YOU) -->
+        <div class="feature-badges-row">
+          <div class="feature-badge-item">
+            <div class="feature-icon-circle" title="Miễn phí giao hàng toàn quốc">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 18C14 14 14 10 14 6C14 4.8954 13.1046 4 12 4C9.3333 4 6.6667 4 4 4C2.8954 4 2 4.8954 2 6C2 9.6667 2 13.3333 2 17C2 17.5523 2.4477 18 3 18C3.6667 18 4.3333 18 5 18M15 18C13 18 11 18 9 18M19 18C19.6667 18 20.3333 18 21 18C21.5523 18 22 17.5523 22 17C22 15.7833 22 14.5667 22 13.35C21.9996 13.1231 21.922 12.903 21.78 12.726C20.62 11.276 19.46 9.826 18.3 8.376C18.1106 8.1388 17.8236 8.0004 17.52 8C16.3467 8 15.1733 8 14 8M19 18C19 19.1046 18.1046 20 17 20C15.8954 20 15 19.1046 15 18C15 16.8954 15.8954 16 17 16C18.1046 16 19 16.8954 19 18ZM9 18C9 19.1046 8.1046 20 7 20C5.8954 20 5 19.1046 5 18C5 16.8954 5.8954 16 7 16C8.1046 16 9 16.8954 9 18Z"/>
+              </svg>
+            </div>
+            <span class="feature-badge-label">MIỄN PHÍ<br>GIAO HÀNG</span>
+          </div>
+
+          <div class="feature-badge-item">
+            <div class="feature-icon-circle" title="An toàn thanh toán">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 13C20 18 16.5 20.5 12.34 21.95C12.1222 22.0238 11.8855 22.0203 11.67 21.94C7.5 20.5 4 18 4 13C4 10.6667 4 8.3333 4 6C4 5.4477 4.4477 5 5 5C7 5 9.5 3.8 11.24 2.28C11.6777 1.9061 12.3223 1.9061 12.76 2.28C14.51 3.81 17 5 19 5C19.5523 5 20 5.4477 20 6C20 8.3333 20 10.6667 20 13ZM9 12C9.6667 12.6667 10.3333 13.3333 11 14C12.3333 12.6667 13.6667 11.3333 15 10"/>
+              </svg>
+            </div>
+            <span class="feature-badge-label">AN TOÀN<br>THANH TOÁN</span>
+          </div>
+
+          <div class="feature-badge-item">
+            <div class="feature-icon-circle" title="Thể hiện chính bạn">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 9.5C2 7.2219 3.4044 5.1797 5.5316 4.3644C7.6588 3.5491 10.0684 4.1295 11.591 5.824C11.6969 5.9372 11.845 6.0015 12 6.0015C12.155 6.0015 12.3031 5.9372 12.409 5.824C13.9271 4.1182 16.3426 3.5302 18.4749 4.3475C20.6071 5.1647 22.0109 7.2165 22 9.5C22 11.79 20.5 13.5 19 15C17.1693 16.771 15.3387 18.542 13.508 20.313C13.1311 20.7459 12.5863 20.996 12.0123 20.9996C11.4383 21.0033 10.8904 20.7601 10.508 20.332C8.672 18.5547 6.836 16.7773 5 15C3.5 13.5 2 11.8 2 9.5"/>
+              </svg>
+            </div>
+            <span class="feature-badge-label">THỂ HIỆN<br>CHÍNH BẠN</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CENTER VISUAL: Synchronized Personalized MODU Bottle from Page 2 -->
+      <div class="checkout-visual-center">
+        <div class="interactive-bottle-wrapper" id="checkoutBottleWrapper">
+          <img 
+            src="assets/bottle-mint.png" 
+            alt="Bình giữ nhiệt MODU đã cá nhân hóa của bạn" 
+            class="interactive-bottle-body" 
+            id="checkoutBottleBody"
+          >
+          <img 
+            src="assets/lids/lid-mint.png" 
+            alt="Nắp bình MODU của bạn" 
+            class="interactive-bottle-lid" 
+            id="checkoutBottleLid"
+          >
+          <div class="live-engrave-overlay font-brittany" id="checkoutEngraveText">
+            <div class="engrave-container">
+              <div class="engrave-name-row">
+                <svg class="engrave-svg" viewBox="0 0 180 50" preserveAspectRatio="xMidYMid meet">
+                  <defs>
+                    <path id="curvePathCheckout" d="M 10 33 Q 90 26 170 33" fill="transparent" />
+                  </defs>
+                  <text class="engrave-text-curved">
+                    <textPath id="checkoutEngraveTextPath" href="#curvePathCheckout" startOffset="50%" text-anchor="middle">Olivia</textPath>
+                  </text>
+                </svg>
+              </div>
+              <div class="engrave-heart-row" id="checkoutEngraveHeartWrap">
+                <svg class="engrave-heart-svg" viewBox="0 0 24 24" width="13" height="13" fill="none">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="#617B78" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="live-charm-hanger" id="checkoutCharmHanger">
+            <img 
+              src="assets/charms/charm_daisy_hanging.png" 
+              alt="Phụ kiện treo bình của bạn" 
+              class="hanging-charm-img" 
+              id="checkoutCharmImg"
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: 3-Card Frosted Checkout Suite (Matches page 3.png) -->
+      <div class="checkout-right-col">
+        <div class="checkout-cards-stack">
+          
+          <!-- CARD 1: ORDER SUMMARY with Edit Button -->
+          <div class="checkout-card card-summary">
+            <div class="checkout-card-header">
+              <div class="step-num-title">
+                <span class="step-num-pill">1</span>
+                <span class="step-title-text">ĐƠN HÀNG</span>
+              </div>
+              <button type="button" class="btn-card-edit" id="btnEditCustomization" title="Sửa thiết kế của bạn">
+                <svg class="morph-svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path id="editBtnIconPath" d="M21.174 6.812C22.275 5.7113 22.2752 3.9265 21.1745 2.8255C20.0738 1.7245 18.289 1.7243 17.188 2.825C12.7393 7.2747 8.2907 11.7243 3.842 16.174C3.6098 16.4055 3.4381 16.6905 3.342 17.004C2.9017 18.4547 2.4613 19.9053 2.021 21.356C1.9683 21.5322 2.0167 21.7231 2.1468 21.853C2.2769 21.9829 2.4679 22.0309 2.644 21.978C4.095 21.538 5.546 21.098 6.997 20.658C7.3102 20.5628 7.5952 20.3921 7.827 20.161C12.276 15.7113 16.725 11.2617 21.174 6.812ZM15 5C16.3333 6.3333 17.6667 7.6667 19 9"></path>
+                </svg>
+                <span>Sửa</span>
+              </button>
+            </div>
+
+            <div class="order-summary-content">
+              <div class="summary-thumbnail-wrap">
+                <img src="assets/bottle-mint.png" alt="Ảnh chiếc bình MODU đã thiết kế" id="summaryThumbImg">
+              </div>
+
+              <div class="summary-details">
+                <div class="summary-item-top">
+                  <h3 class="summary-product-title">Bình giữ nhiệt MODU</h3>
+                  <span class="summary-product-price" id="summaryProductPrice">$34.00</span>
+                </div>
+                <p class="summary-spec-text" id="summaryColorsSpec">Xanh bạc hà / Quai xanh bạc hà</p>
+                <p class="summary-spec-text" id="summaryDetailsSpec">Olivia ♡ / Hoa cúc</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2: SHIPPING & PAYMENT -->
+          <div class="checkout-card card-shipping-payment">
+            <div class="checkout-card-header">
+              <div class="step-num-title">
+                <span class="step-num-pill">2</span>
+                <span class="step-title-text">GIAO HÀNG &amp; THANH TOÁN</span>
+              </div>
+            </div>
+
+            <!-- Shipping Address Row -->
+            <div class="shipping-address-row" id="shippingAddressRow" role="button" tabindex="0" title="Bấm để sửa địa chỉ giao hàng">
+              <div class="row-icon-pin">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10C20 14.993 14.461 20.193 12.601 21.799C12.245 22.0667 11.755 22.0667 11.399 21.799C9.539 20.193 4 14.993 4 10C4 5.5817 7.5817 2 12 2C16.4183 2 20 5.5817 20 10M15 10C15 11.6569 13.6569 13 12 13C10.3431 13 9 11.6569 9 10C9 8.3431 10.3431 7 12 7C13.6569 7 15 8.3431 15 10Z"/>
+                </svg>
+              </div>
+              <div class="row-address-info">
+                <strong class="info-title">Địa chỉ giao hàng</strong>
+                <span class="info-value" id="shippingAddressValue">123 Sunny Lane, San Diego, CA</span>
+              </div>
+              <span class="row-chevron-arrow">&rsaquo;</span>
+            </div>
+
+            <!-- Payment Method Row -->
+            <div class="payment-method-row">
+              <div class="row-icon-card">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 5C9.3333 5 14.6667 5 20 5C21.1046 5 22 5.8954 22 7C22 10.3333 22 13.6667 22 17C22 18.1046 21.1046 19 20 19C14.6667 19 9.3333 19 4 19C2.8954 19 2 18.1046 2 17C2 13.6667 2 10.3333 2 7C2 5.8954 2.8954 5 4 5ZM2 10C8.6667 10 15.3333 10 22 10M6 14C6.6667 14 7.3333 14 8 14"/>
+                </svg>
+              </div>
+              <div class="row-payment-info">
+                <strong class="info-title">Cách thanh toán</strong>
+                <div class="payment-options-grid">
+                  <!-- Visa -->
+                  <button type="button" class="btn-payment-method active" data-method="visa" title="Thanh toán bằng Visa">
+                    <span class="pay-logo-visa">VISA</span>
+                  </button>
+
+                  <!-- Mastercard -->
+                  <button type="button" class="btn-payment-method" data-method="mastercard" title="Thanh toán bằng Mastercard">
+                    <span class="pay-logo-mc">
+                      <span class="mc-red"></span>
+                      <span class="mc-yellow"></span>
+                    </span>
+                  </button>
+
+                  <!-- Apple Pay -->
+                  <button type="button" class="btn-payment-method" data-method="applepay" title="Thanh toán bằng Apple Pay">
+                    <span class="pay-logo-apple">
+                      <svg width="12" height="14" viewBox="0 0 170 170" fill="currentColor" style="display:inline-block; vertical-align:-1px; margin-right:2px;">
+                        <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.07-7.66-7.85-11.87-14.34-6.42-9.88-11.45-20.94-15.09-33.19-3.64-12.24-5.46-23.78-5.46-34.6 0-14.28 3.56-26.04 10.68-35.28 7.12-9.24 16.03-13.97 26.74-14.19 5.34 0 11.07 1.34 17.18 4.02 6.12 2.68 10.05 4.02 11.8 4.02 1.54 0 5.64-1.42 12.31-4.27 6.67-2.85 12.2-4.14 16.59-3.88 12.44.68 22.42 5.3 29.94 13.87-10.93 6.64-16.29 15.74-16.08 27.31.22 9.07 3.73 16.71 10.53 22.92 6.8 6.21 14.88 9.77 24.24 10.68-2.22 6.53-4.8 12.83-7.75 18.91zM119.22 31.84c0-7.23 2.66-14.07 7.99-20.52 5.33-6.45 11.96-10.45 19.89-12 1.48 7.55-.91 14.49-7.17 20.82-6.26 6.33-13.16 10.23-20.71 11.7z"/>
+                      </svg>Pay
+                    </span>
+                  </button>
+
+                  <!-- Google Pay -->
+                  <button type="button" class="btn-payment-method" data-method="googlepay" title="Thanh toán bằng Google Pay">
+                    <span class="pay-logo-gpay">GPay</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3: COMPLETE ORDER & PAY NOW (Morphicons Integration) -->
+          <div class="checkout-card card-complete-order">
+            <div class="checkout-card-header">
+              <div class="step-num-title">
+                <span class="step-num-pill">3</span>
+                <span class="step-title-text">HOÀN TẤT ĐƠN</span>
+              </div>
+            </div>
+
+            <div class="complete-order-body">
+              <div class="order-total-row">
+                <span class="total-label">Tổng cộng</span>
+                <strong class="total-amount" id="finalTotalAmount">$34.00</strong>
+              </div>
+
+              <button type="button" class="btn-pay-now-lime" id="btnFinalPayNow">
+                <svg class="morph-svg btn-lock-morph" id="payNowBtnSvg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path id="payNowBtnIconPath" d="M5 11C9.6667 11 14.3333 11 19 11C20.1046 11 21 11.8954 21 13C21 15.3333 21 17.6667 21 20C21 21.1046 20.1046 22 19 22C14.3333 22 9.6667 22 5 22C3.8954 22 3 21.1046 3 20C3 17.6667 3 15.3333 3 13C3 11.8954 3.8954 11 5 11ZM7 11C7 9.6667 7 8.3333 7 7C7 4.2386 9.2386 2 12 2C14.7614 2 17 4.2386 17 7C17 8.3333 17 9.6667 17 11"></path>
+                </svg>
+                <span>Thanh toán</span>
+                <svg class="btn-arrow-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12C9.6667 12 14.3333 12 19 12M12 5C14.3333 7.3333 16.6667 9.6667 19 12C16.6667 14.3333 14.3333 16.6667 12 19"></path>
+                </svg>
+              </button>
+
+              <div class="checkout-security-guarantee">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 13C20 18 16.5 20.5 12.34 21.95C12.1222 22.0238 11.8855 22.0203 11.67 21.94C7.5 20.5 4 18 4 13C4 10.6667 4 8.3333 4 6C4 5.4477 4.4477 5 5 5C7 5 9.5 3.8 11.24 2.28C11.6777 1.9061 12.3223 1.9061 12.76 2.28C14.51 3.81 17 5 19 5C19.5523 5 20 5.4477 20 6C20 8.3333 20 10.6667 20 13ZM9 12C9.6667 12.6667 10.3333 13.3333 11 14C12.3333 12.6667 13.6667 11.3333 15 10"/>
+                </svg>
+                <span>Thanh toán an toàn, được mã hóa</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= SLEEK TEXT FOOTER (SUPPORT SECTION) ================= -->
+  <footer class="modu-footer" id="support">
+    <!-- Top Feature Trust Badges -->
+    <div class="footer-trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon-box">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="trust-text">
+          <strong>Inox 316 Chuẩn Y Tế</strong>
+          <span>Kháng axit &amp; giữ nhiệt 24h</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon-box">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div class="trust-text">
+          <strong>Khắc Laser Độc Bản</strong>
+          <span>Tùy biến tên &amp; font nghệ thuật</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon-box">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+        </div>
+        <div class="trust-text">
+          <strong>Hộp Quà Cao Cấp</strong>
+          <span>Thiệp chúc mừng &amp; túi canvas</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon-box">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+        </div>
+        <div class="trust-text">
+          <strong>Đổi Mới 1:1 Toàn Quốc</strong>
+          <span>Bảo hành chính hãng 12 tháng</span>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- ================= UNBOX RESULT MODAL ================= -->
-  <div class="unbox-result-modal" id="unboxResultModal" aria-hidden="true" role="dialog" aria-modal="true">
-    <div class="unbox-modal-dialog">
-      <button type="button" class="modal-close-btn" id="closeUnboxModalBtn" aria-label="Đóng popup">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
-
-      <div class="result-header">
-        <span class="result-badge-rarity" id="resultRarityBadge">Hiếm</span>
-        <div class="result-celebration-title">Chúc mừng bạn đã khui trúng!</div>
+    <div class="footer-inner">
+      <!-- Brand Column -->
+      <div class="footer-col footer-brand">
+        <a href="#page-hero" class="brand-logo" aria-label="MODU Trang Chủ">
+          <div class="logo-text">
+            <span class="logo-m">M</span>ODU
+          </div>
+        </a>
+        <p class="footer-brand-bio">
+          Dòng bình giữ nhiệt thời trang cá nhân hóa từ thép không gỉ 316 chuẩn y tế. Kết hợp giữa công năng giữ nhiệt đỉnh cao và nghệ thuật tự do sáng tạo.
+        </p>
+        <div class="footer-slogan-pill">
+          <span class="slogan-sparkle">✨</span> Tự thiết kế – Tự thể hiện – Mang dấu ấn riêng
+        </div>
+        <div class="footer-social-row" aria-label="Mạng xã hội MODU">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="MODU trên Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="MODU trên TikTok" title="TikTok">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="MODU trên Facebook" title="Facebook">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="https://shopee.vn" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="MODU trên Shopee Mall" title="Shopee">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          </a>
+        </div>
       </div>
 
-      <div class="result-charm-visual-stage">
-        <div class="result-halo-glow"></div>
-        <div class="result-charm-visual" id="resultCharmVisual"></div>
+      <!-- Col 2: Navigation -->
+      <div class="footer-col">
+        <h4>Trang &amp; Khám Phá</h4>
+        <ul>
+          <li><a href="#page-hero">Showcase Bình Nước</a></li>
+          <li><a href="#page-personalize">Studio Tự Thiết Kế 3D</a></li>
+          <li><a href="#page-checkout">Kiểm Tra Đơn &amp; Phụ Kiện</a></li>
+          <li><a href="about.html">Câu Chuyện Thương Hiệu</a></li>
+          <li><a href="blog/index.html">Blog &amp; Cẩm Nang Cá Nhân Hóa</a></li>
+        </ul>
       </div>
 
-      <h3 class="result-charm-name" id="resultCharmName">Charm Gấu Bơ Pastel</h3>
-      <span class="result-vibe-pill" id="resultVibePill">Vibe: Cute & Ấm Áp</span>
-      <p class="result-charm-desc" id="resultCharmDesc">Gấu bơ màu pastel ngọt ngào, mang lại cảm giác bình yên và dễ thương trên từng ngụm nước hằng ngày.</p>
+      <!-- Col 3: Knowledge & Guides -->
+      <div class="footer-col">
+        <h4>Cẩm Nang &amp; Hỗ Trợ</h4>
+        <ul>
+          <li><a href="blog/inox-316-la-gi-so-sanh-inox-316-va-304/index.html">Inox 316 Chuẩn Y Tế Là Gì?</a></li>
+          <li><a href="blog/binh-giu-nhiet-khac-ten-theo-yeu-cau/index.html">Bí Quyết Khắc Tên Laser Đẹp</a></li>
+          <li><a href="blog/cach-ve-sinh-va-khu-mui-binh-giu-nhiet/index.html">5 Cách Vệ Sinh &amp; Khử Mùi</a></li>
+          <li><a href="blog/qua-tang-doanh-nghiep-binh-giu-nhiet-in-logo/index.html">Quà Tặng Doanh Nghiệp In Logo</a></li>
+          <li><a href="blog/cach-bao-quan-lop-son-va-chu-khac-laser/index.html">Bảo Quản Sơn &amp; Chữ Khắc</a></li>
+        </ul>
+      </div>
 
-      <div class="result-modal-actions">
-        <button type="button" class="btn-result-attach" id="btnAttachToBottle">
-          Gắn thử charm lên bình MODU của bạn
+      <!-- Col 4: Newsletter -->
+      <div class="footer-col footer-newsletter">
+        <h4>Bản Tin MODU</h4>
+        <p>Đăng ký nhận thông tin về các bộ charm phiên bản giới hạn và quà tặng độc quyền từ MODU.</p>
+        <div class="footer-capsule-row">
+          <input type="email" placeholder="Email của bạn..." id="newsletterInput" aria-label="Nhập email của bạn">
+          <button type="button" id="btnNewsletter" class="footer-capsule-btn">
+            <span>Đăng Ký</span>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+        <span class="footer-newsletter-note">Cam kết không spam · Hủy đăng ký bất cứ lúc nào</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-copy">
+        &copy; 2026 MODU Lifestyle Inc. Tất cả quyền được bảo lưu. Thiết kế dành cho thế hệ sáng tạo.
+      </div>
+      <div class="footer-bottom-links">
+        <a href="javascript:void(0)">Chính Sách Bảo Mật</a>
+        <a href="javascript:void(0)">Điều Khoản Sử Dụng</a>
+        <a href="javascript:void(0)">Chính Sách Bảo Hành</a>
+        <a href="javascript:void(0)">Hướng Dẫn Vệ Sinh</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= EDIT SHIPPING ADDRESS MODAL ================= -->
+  <div class="address-modal-overlay" id="addressModalOverlay" aria-hidden="true">
+    <div class="address-modal-box" role="dialog" aria-modal="true" aria-labelledby="modalAddressTitle">
+      <div class="address-modal-header">
+        <h3 id="modalAddressTitle">Sửa địa chỉ giao hàng</h3>
+        <button type="button" class="modal-close-icon" id="btnCloseAddressModal" aria-label="Đóng hộp thoại">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6C14 10 10 14 6 18M6 6C10 10 14 14 18 18"></path></svg>
         </button>
-        <button type="button" class="btn-result-save" id="btnSaveCharmToCart">
-          Lưu charm này vào túi hàng (+39.000₫)
-        </button>
-        <button type="button" class="btn-result-again" id="btnUnboxAgain">
-          Khui lại túi khác (Thử vận may)
-        </button>
+      </div>
+      <div class="address-modal-body">
+        <label for="addressInput">Địa chỉ &amp; thành phố</label>
+        <input type="text" id="addressInput" class="address-field" value="123 Sunny Lane, San Diego, CA">
+      </div>
+      <div class="address-modal-footer">
+        <button type="button" class="btn-modal-cancel" id="btnCancelAddress">Hủy</button>
+        <button type="button" class="btn-modal-save" id="btnSaveAddress">Lưu địa chỉ</button>
       </div>
     </div>
   </div>
 
-  <!-- ================= CHOOSE YOUR VIBE (GEN Z VS OFFICE) ================= -->
-  <section class="vibe-section" id="vibe">
-    <div class="section-header-center">
-      <span class="section-eyebrow">CHOOSE YOUR VIBE • PHÂN TẦNG GU RIÊNG</span>
-      <h2 class="section-title">Chiếc Bình Phản Chiếu Cá Tính Riêng</h2>
-      <p class="section-desc">Dù bạn là Gen Z năng động yêu thích màu ngọt ngào và sưu tầm charm, hay dân văn phòng theo đuổi sự tối giản thanh lịch và sống xanh bền vững.</p>
+  <!-- ================= ORDER SUCCESS CELEBRATION MODAL ================= -->
+  <div class="success-modal-overlay" id="successModalOverlay" aria-hidden="true">
+    <div class="success-modal-box" role="dialog" aria-modal="true">
+      <canvas id="confettiCanvas" class="confetti-canvas"></canvas>
+      <div class="success-modal-badge">ĐÃ XÁC NHẬN ĐƠN</div>
+      <h2>Cảm ơn bạn đã đặt hàng!</h2>
+      <p class="order-id-label">Đơn hàng #MODU-<span id="successOrderNum">89247</span></p>
       
-      <!-- Filter Tabs -->
-      <div class="vibe-filter-tabs">
-        <button type="button" class="vibe-tab-btn active" data-vibe-tab="all" aria-selected="true">Tất cả phong cách</button>
-        <button type="button" class="vibe-tab-btn" data-vibe-tab="genz" aria-selected="false">Gen Z Trendy</button>
-        <button type="button" class="vibe-tab-btn" data-vibe-tab="office" aria-selected="false">Dân Văn Phòng & Minimal</button>
-      </div>
-    </div>
-
-    <div class="vibe-cards-grid">
-      <!-- Vibe Card 1: Gen Z -->
-      <div class="vibe-card genz-theme" id="vibeCardGenz">
-        <div class="vibe-card-badge">Bộ Sưu Tập Gen Z</div>
-        <div class="vibe-card-img-wrap">
-          <img src="assets/bottle-pink.png" alt="Bình MODU Hồng Blush" class="vibe-bottle-img">
-          <div class="vibe-charm-float-badge">
-            <img src="charm/charm-bow.png" alt="Charm Nơ Hồng" class="mini-charm-img">
-            <span>Charm Nơ Coquette</span>
-          </div>
-        </div>
-        <div class="vibe-card-body">
-          <h3>Khui Charm May Mắn – Bật Gu Độc Bản</h3>
-          <p>Gam màu pastel kẹo ngọt, phối đồ OOTD đi học, đi cà phê cùng bạn bè. Thêm charm ngẫu nhiên tạo niềm vui unbox mỗi tuần.</p>
-          <ul class="vibe-feature-list">
-            <li>Dáng 500ml thon gọn nhét vừa balo & túi canvas</li>
-            <li>Màu Hồng Blush & Xanh Sky kẹo ngọt</li>
-            <li>Khắc tên laser kiểu chữ ký thanh lịch (Dancing Script)</li>
-            <li>Tặng kèm 1 túi mù charm bí mật khui trúng</li>
-          </ul>
-          <div class="vibe-price-row">
-            <div class="vibe-price">349.000₫</div>
-            <button type="button" class="btn-vibe-action" id="btnExploreGenZ">Tùy biến Vibe Gen Z &rarr;</button>
-          </div>
-        </div>
+      <div class="success-bottle-preview">
+        <img src="assets/bottle-mint.png" alt="Bình đã đặt" id="successBottleImg">
+        <div class="success-bottle-tag" id="successBottleTag">Olivia ♡ • Hoa cúc</div>
       </div>
 
-      <!-- Vibe Card 2: Office -->
-      <div class="vibe-card office-theme" id="vibeCardOffice">
-        <div class="vibe-card-badge">Dân Văn Phòng & Minimal</div>
-        <div class="vibe-card-img-wrap">
-          <img src="assets/bottle-black.png" alt="Bình MODU Đen Obsidian" class="vibe-bottle-img">
-          <div class="vibe-charm-float-badge">
-            <img src="charm/charm-coffee.png" alt="Charm Cà Phê" class="mini-charm-img">
-            <span>Charm Cà Phê Chill</span>
-          </div>
-        </div>
-        <div class="vibe-card-body">
-          <h3>Khắc Tên Độc Bản – Nâng Tầm Chất Xanh</h3>
-          <p>Thiết kế hiện đại, dung tích 750ml có quai xách tiện dụng cho ngày làm việc năng suất, giữ ấm cà phê sáng và nước mát cả ngày.</p>
-          <ul class="vibe-feature-list">
-            <li>Dáng 750ml có quai xách chắc chắn, bù nước 12H</li>
-            <li>Màu Đen Obsidian & Xanh Sage thanh lịch tối giản</li>
-            <li>Khắc laser ngang đế bình chuẩn Minimal (Outfit Bold)</li>
-            <li>Tặng kèm Charm Cà Phê Chill & Túi vải bảo vệ</li>
-          </ul>
-          <div class="vibe-price-row">
-            <div class="vibe-price">429.000₫</div>
-            <button type="button" class="btn-vibe-action" id="btnExploreOffice">Tùy biến Vibe Văn Phòng &rarr;</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      <p class="success-desc">
+        Bình giữ nhiệt MODU của bạn đang được khắc laser tận tâm tại studio của chúng tôi ở California. Liên kết theo dõi đơn hàng đã được gửi đến email của bạn.
+      </p>
 
-  <!-- ================= ACCESSORIES SECTION ================= -->
-  <section class="accessories-section" id="accessories">
-    <div class="section-header-center">
-      <span class="section-eyebrow">PHỤ KIỆN & SƯU TẦM</span>
-      <h2 class="section-title">Charm Làm Chiếc Bình Có Câu Chuyện</h2>
-      <p class="section-desc">Theo định hướng chiến dịch, MODU khai thác yếu tố bất ngờ, unboxing và UGC: người dùng có thể khoe quá trình phối bình, mở charm và chia sẻ thành phẩm.</p>
-    </div>
-
-    <div class="accessories-grid">
-      <article class="accessory-card">
-        <div class="accessory-badge">Túi mù</div>
-        <h3>Charm Ngẫu Nhiên</h3>
-        <p>Một chi tiết nhỏ nhưng giúp bình giữ nhiệt trở thành vật phẩm có tính sưu tầm độc bản.</p>
-      </article>
-      <article class="accessory-card">
-        <div class="accessory-badge">Quà tặng</div>
-        <h3>Túi Vải Canvas</h3>
-        <p>Túi đựng đồng bộ để mang theo hằng ngày hoặc biến MODU thành món quà cá nhân hóa.</p>
-      </article>
-      <article class="accessory-card">
-        <div class="accessory-badge">Bộ sưu tập</div>
-        <h3>Charm Theo Mùa</h3>
-        <p>Các bộ charm giới hạn giúp người dùng quay lại, phối mới và tiếp tục kể câu chuyện của mình.</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- ================= ABOUT SECTION ================= -->
-  <section class="about-section" id="about">
-    <div class="about-panel">
-      <div>
-        <span class="section-eyebrow">DNA THƯƠNG HIỆU</span>
-        <h2 class="section-title">Người Bạn Gen Z Có Gu</h2>
-      </div>
-      <p>MODU là viết tắt của Modify + You. Thương hiệu được hình dung như một người bạn sáng tạo, phóng khoáng, tôn trọng sự khác biệt cá nhân và đồng hành cùng lối sống xanh của người trẻ.</p>
-      <div class="brand-pill-row">
-        <span>Sáng tạo</span>
-        <span>Cá nhân hóa</span>
-        <span>Sưu tầm</span>
-        <span>Sống xanh</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= SUPPORT SECTION ================= -->
-  <section class="support-section" id="support">
-    <div class="section-header-center">
-      <span class="section-eyebrow">MINH BẠCH ĐỂ TẠO NIỀM TIN</span>
-      <h2 class="section-title">Một Thương Hiệu Mới Cần Nói Rõ Cam Kết</h2>
-      <p class="section-desc">Doc nhóm bạn có nhắc MODU là thương hiệu mới, nên website cần làm rõ chất lượng, thời gian xử lý đơn cá nhân hóa và hỗ trợ sau mua.</p>
-    </div>
-
-    <div class="support-grid">
-      <div class="support-item">
-        <h3>Minh Bạch Chất Lượng</h3>
-        <p>Cung cấp thông tin vật liệu, độ kín nắp, khả năng giữ nhiệt và hướng dẫn bảo quản rõ ràng.</p>
-      </div>
-      <div class="support-item">
-        <h3>Thời Gian Cá Nhân Hóa</h3>
-        <p>Đơn có khắc tên cần thêm thời gian xử lý, vì vậy thời gian giao hàng nên được thông báo trước.</p>
-      </div>
-      <div class="support-item">
-        <h3>Chăm Sóc Sau Mua</h3>
-        <p>Hỗ trợ câu hỏi về khắc tên, charm, đổi trả và cách giữ bình bền đẹp trong quá trình sử dụng.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= CUSTOMIZER MODAL 2.0 ================= -->
-  <div class="customizer-modal" id="customizerModal" aria-hidden="true" role="dialog" aria-modal="true">
-    <div class="modal-dialog">
-      <button type="button" class="modal-close-btn" id="closeCustomizerBtn" aria-label="Đóng tùy chỉnh">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
-
-      <!-- Bottle Preview Column -->
-      <div class="modal-preview-col" id="customizerPreviewCol">
-        <div class="preview-badges-row">
-          <span class="preview-badge silhouette-badge" id="previewSilhouetteBadge">750ml Có Quai Xách</span>
-          <span class="preview-badge color-badge" id="previewColorBadge">
-            <span class="badge-dot" id="previewColorDot" style="background-color: var(--color-mint);"></span>
-            <span id="previewColorText">Xanh Sage</span>
-          </span>
-        </div>
-
-        <div class="modal-bottle-display" id="modalBottleDisplay">
-          <img src="assets/bottle-mint.png" alt="Bình MODU đang tùy chỉnh" id="modalBottleImg">
-          
-          <!-- Live Laser Engraving Simulation with Deboss/Metallic Shader -->
-          <div class="engraving-live-preview pos-vertical font-outfit" id="modalEngravePreview" data-color-tone="light">
-            <span class="engrave-icon-prefix" id="engraveIconPrefix" style="display: none;"></span>
-            <span class="engrave-text-content" id="engraveTextContent">ALEX</span>
-            <span class="engrave-icon-suffix" id="engraveIconSuffix">♥</span>
-          </div>
-
-          <!-- Attached Charm Anchor in Preview -->
-          <div class="bottle-charm-anchor modal-charm-anchor anchor-750" id="modalBottleCharmAnchor">
-            <div class="attached-charm-chain"></div>
-            <div class="attached-charm-pendant" id="modalAttachedCharmPendant">
-              <img src="charm/charm-bear.png" alt="Charm đính kèm" class="pendant-real-img">
-            </div>
-          </div>
-        </div>
-
-        <div class="preview-hint-text">
-          <span>Xem trước trực tiếp theo thời gian thực (60FPS)</span>
-        </div>
-      </div>
-
-      <!-- Config Controls Column -->
-      <div class="modal-config-col" id="modalConfigCol">
-        <div class="config-header">
-          <div>
-            <span class="config-step-eyebrow">STUDIO CUSTOMIZER 2.0</span>
-            <h2>Bình Giữ Nhiệt MODU</h2>
-          </div>
-          <div class="price" id="configPrice">429.000₫</div>
-        </div>
-
-        <!-- BƯỚC 1: Chọn Form Dáng Bình -->
-        <div class="config-group">
-          <span class="config-label">1. Form Dáng Bình:</span>
-          <div class="silhouette-tabs-row">
-            <button type="button" class="silhouette-tab-btn" data-silhouette="500ml" data-price="349000">
-              <span class="tab-capacity">500ml Thon Gọn</span>
-              <span class="tab-desc">Vừa balo, túi xách • 349.000₫</span>
-            </button>
-            <button type="button" class="silhouette-tab-btn active" data-silhouette="750ml" data-price="429000">
-              <span class="tab-capacity">750ml Có Quai Xách</span>
-              <span class="tab-desc">Bù nước cả ngày, tiện lợi • 429.000₫</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- BƯỚC 2: Chọn Màu Sắc Pastel/Matte -->
-        <div class="config-group">
-          <span class="config-label">2. Màu Sắc: <strong id="selectedColorName">Xanh Sage</strong></span>
-          <div class="modal-swatches">
-            <button type="button" class="modal-swatch modal-swatch-2 active" aria-label="Xanh Sage" data-color="mint" data-name="Xanh Sage" data-img="assets/bottle-mint.png" style="background-color: var(--color-mint);"></button>
-            <button type="button" class="modal-swatch modal-swatch-2" aria-label="Trắng Mây" data-color="white" data-name="Trắng Mây" data-img="assets/bottle-white.png" style="background-color: var(--color-white);"></button>
-            <button type="button" class="modal-swatch modal-swatch-2" aria-label="Hồng Blush" data-color="pink" data-name="Hồng Blush" data-img="assets/bottle-pink.png" style="background-color: var(--color-pink);"></button>
-            <button type="button" class="modal-swatch modal-swatch-2" aria-label="Xanh Trời" data-color="blue" data-name="Xanh Trời" data-img="assets/bottle-blue.png" style="background-color: #82b9d2;"></button>
-            <button type="button" class="modal-swatch modal-swatch-2" aria-label="Đen Obsidian" data-color="black" data-name="Đen Obsidian" data-img="assets/bottle-black.png" style="background-color: var(--color-black);"></button>
-          </div>
-        </div>
-
-        <!-- BƯỚC 3: Công cụ Khắc Tên Laser Chân Thực -->
-        <div class="config-group">
-          <div class="config-label-row">
-            <span class="config-label">3. Khắc Laser Miễn Phí:</span>
-            <span class="char-counter" id="engraveCharCounter">4/15 ký tự</span>
-          </div>
-
-          <div class="engrave-input-wrap">
-            <input type="text" maxlength="15" placeholder="Nhập tên hoặc quote (tối đa 15 ký tự)..." value="ALEX" class="engrave-input" id="engraveInput">
-          </div>
-
-          <!-- Preset Chips -->
-          <div class="preset-chips-row">
-            <span class="preset-tip">Gợi ý nhanh:</span>
-            <button type="button" class="preset-chip" data-text="ALEX">ALEX</button>
-            <button type="button" class="preset-chip" data-text="MODU">MODU</button>
-            <button type="button" class="preset-chip" data-text="GO GREEN">GO GREEN</button>
-            <button type="button" class="preset-chip" data-text="STAY CHILL">STAY CHILL</button>
-            <button type="button" class="preset-chip" data-text="HYDRATE">HYDRATE</button>
-          </div>
-
-          <!-- Font Choice Cards -->
-          <div class="font-choice-grid">
-            <button type="button" class="font-choice-card active" data-font="outfit">
-              <span class="font-preview outfit-preview">Aa</span>
-              <span class="font-label">Outfit Bold (Tối giản)</span>
-            </button>
-            <button type="button" class="font-choice-card" data-font="dancing">
-              <span class="font-preview dancing-preview">Aa</span>
-              <span class="font-label">Chữ ký thanh lịch (Script)</span>
-            </button>
-            <button type="button" class="font-choice-card" data-font="bebas">
-              <span class="font-preview bebas-preview">AA</span>
-              <span class="font-label">Thể thao năng động (Bebas)</span>
-            </button>
-          </div>
-
-          <!-- Laser Icon Selection -->
-          <div class="icon-choice-row">
-            <span class="icon-label-title">Biểu tượng:</span>
-            <div class="icon-buttons-group">
-              <button type="button" class="icon-choice-btn" data-icon="none" title="Không dùng icon">∅</button>
-              <button type="button" class="icon-choice-btn active" data-icon="heart" title="Trái tim">♥</button>
-              <button type="button" class="icon-choice-btn" data-icon="star" title="Ngôi sao">★</button>
-              <button type="button" class="icon-choice-btn" data-icon="crown" title="Họa tiết sao">✦</button>
-              <button type="button" class="icon-choice-btn" data-icon="leaf" title="Chấm tròn tối giản">●</button>
-            </div>
-            
-            <div class="icon-pos-toggle">
-              <button type="button" class="btn-pos-toggle" data-icon-pos="prefix">Trước tên</button>
-              <button type="button" class="btn-pos-toggle active" data-icon-pos="suffix">Sau tên</button>
-            </div>
-          </div>
-
-          <!-- Engrave Position -->
-          <div class="pos-choice-row">
-            <button type="button" class="pos-choice-card active" data-pos="vertical">
-              <span>Khắc Dọc Thân Bình</span>
-            </button>
-            <button type="button" class="pos-choice-card" data-pos="horizontal">
-              <span>Khắc Ngang Đế Bình</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- BƯỚC 4: Preview Charm Đính Kèm -->
-        <div class="config-group">
-          <div class="config-label-row">
-            <span class="config-label">4. Charm Đính Kèm Nắp / Quai Bình: <strong id="modalSelectedCharmName">Túi Mù Bí Mật</strong></span>
-            <a href="#blindbox" id="linkCustomizerToBlindbox" class="link-blindbox">Khui túi mù thử vận may &rarr;</a>
-          </div>
-
-          <!-- Dynamic Charm Pods Container (Populated by script.js) -->
-          <div class="modal-charms-selector" id="modalCharmsSelector"></div>
-        </div>
-
-        <!-- Summary & Add to Cart -->
-        <div class="modal-summary-box">
-          <div class="summary-line">
-            <span class="modal-summary-spec" id="modalSummarySpec">750ml Có Quai • Xanh Sage • "ALEX ♥" • Túi Mù</span>
-            <span class="modal-summary-total" id="modalSummaryTotal">429.000₫</span>
-          </div>
-          <button type="button" class="btn-add-cart" id="modalAddToCartBtn">Thêm MODU của tôi vào túi</button>
-        </div>
+      <div class="success-actions">
+        <button type="button" class="btn-pill-lime" id="btnNewCustomization">Thiết kế bình khác</button>
       </div>
     </div>
   </div>
 
-  <!-- ================= SHOPPING CART DRAWER ================= -->
+  <!-- ================= CART DRAWER ================= -->
   <div class="cart-drawer-overlay" id="cartOverlay" aria-hidden="true"></div>
-  <aside class="cart-drawer" id="cartDrawer" aria-label="Túi mua hàng" role="dialog" aria-modal="true">
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Giỏ hàng" role="dialog" aria-modal="true">
     <div class="cart-drawer-header">
-      <h3>Túi của bạn (<span id="cartDrawerCount">1</span>)</h3>
-      <button class="icon-btn" id="closeCartBtn" aria-label="Đóng túi">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round"/>
-        </svg>
+      <h3>Giỏ hàng (<span id="cartDrawerCount">1</span>)</h3>
+      <button class="icon-btn" id="closeCartBtn" aria-label="Đóng giỏ hàng">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6C14 10 10 14 6 18M6 6C10 10 14 14 18 18"></path></svg>
       </button>
     </div>
 
     <div class="cart-items-list" id="cartItemsList">
       <div class="cart-item">
-        <img src="assets/bottle-mint.png" alt="Bình MODU màu Xanh Sage" class="cart-item-img">
+        <img src="assets/bottle-mint.png" alt="Bình MODU đã thiết kế" class="cart-item-img" id="cartItemThumb">
         <div class="cart-item-info">
-          <div class="cart-item-title">Bình Giữ Nhiệt MODU</div>
-          <div class="cart-item-spec">Xanh Sage / 750ml có quai / ALEX</div>
-          <div class="cart-item-price">429.000₫</div>
+          <div class="cart-item-title">Bình giữ nhiệt MODU</div>
+          <div class="cart-item-spec" id="cartItemSpec">Xanh bạc hà / Quai xanh bạc hà • Olivia ♡ • Hoa cúc</div>
+          <div class="cart-item-price">$34.00</div>
         </div>
       </div>
     </div>
@@ -825,176 +1007,27 @@
     <div class="cart-drawer-footer">
       <div class="cart-subtotal">
         <span>Tạm tính</span>
-        <span id="cartSubtotalAmount">429.000₫</span>
+        <span id="cartSubtotalAmount">$34.00</span>
       </div>
-      <button class="btn-checkout" id="checkoutBtn">Tiến hành đặt hàng</button>
+      <button class="btn-checkout-drawer" id="btnDrawerCheckout">
+        <span>Tiến hành thanh toán</span>
+        <svg class="btn-arrow-svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12C9.6667 12 14.3333 12 19 12M12 5C14.3333 7.3333 16.6667 9.6667 19 12C16.6667 14.3333 14.3333 16.6667 12 19"></path>
+        </svg>
+      </button>
     </div>
   </aside>
 
   <!-- ================= TOAST NOTIFICATION ================= -->
   <div class="toast-notice" id="toastNotice">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d4fc39" stroke-width="2.5">
-      <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#d4fc39" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 6C16.3333 9.6667 12.6667 13.3333 9 17C7.3333 15.3333 5.6667 13.6667 4 12"/>
     </svg>
-    <span id="toastText">Đã thêm vào túi!</span>
+    <span id="toastText">Đã cập nhật sản phẩm!</span>
   </div>
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <h2>MODU</h2>
-        <p>Tự thiết kế, tự thể hiện. MODU kết hợp bình giữ nhiệt tái sử dụng, khắc tên laser và charm sưu tầm cho người trẻ có gu.</p>
-      </div>
-
-      <div class="footer-col">
-        <h4>Sản phẩm</h4>
-        <ul>
-          <li><a href="#bottles">Bình MODU</a></li>
-          <li><a href="#customize">Khắc tên laser</a></li>
-          <li><a href="#accessories">Túi mù charm</a></li>
-          <li><a href="#accessories">Hộp quà MODU</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Thương hiệu</h4>
-        <ul>
-          <li><a href="#about">Câu chuyện MODU</a></li>
-          <li><a href="#about">Lối sống xanh</a></li>
-          <li><a href="#support">Chất liệu & bảo quản</a></li>
-          <li><a href="#support">Cam kết chất lượng</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Hỗ trợ</h4>
-        <ul>
-          <li><a href="#support">Trung tâm hỗ trợ</a></li>
-          <li><a href="#support">Bảo hành</a></li>
-          <li><a href="#support">Giao hàng & đổi trả</a></li>
-          <li><a href="#support">Liên hệ</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 MODU. Giữ toàn quyền.</p>
-      <p>Modify + You.</p>
-    </div>
-  </footer>
-
-  <!-- ================= DEBUG / CALIBRATION PANEL ================= -->
-  <div class="debug-widget" id="debugWidget">
-    <!-- Calibration Card -->
-    <div class="debug-card" id="debugCard">
-      <div class="debug-card-header">
-        <h4>BẢNG CĂN CHỈNH BÌNH & CÁNH TAY</h4>
-        <button class="debug-close-btn" id="debugCloseBtn" title="Thu nhỏ/Mở lại">_</button>
-      </div>
-
-      <div class="debug-controls-body">
-        <p class="debug-tip">Kéo thanh trượt để bình & tay di chuyển trực tiếp:</p>
-
-        <!-- 1. Rotation (Xoay) -->
-        <div class="debug-field highlight-field">
-          <div class="debug-field-header">
-            <label>Góc Xoay (Rotate):</label>
-            <span class="debug-val" id="valRotate">-10.5deg</span>
-          </div>
-          <input type="range" id="inputRotate" min="-45" max="45" step="0.5" value="-10.5">
-        </div>
-
-        <!-- 2. Scale Zoom (Phóng to / Thu nhỏ) -->
-        <div class="debug-field highlight-field">
-          <div class="debug-field-header">
-            <label>Phóng To / Thu Nhỏ (Scale):</label>
-            <span class="debug-val" id="valScale">1.06x</span>
-          </div>
-          <input type="range" id="inputScale" min="0.5" max="2.2" step="0.02" value="1.06">
-        </div>
-
-        <div class="debug-divider"></div>
-
-        <!-- 3. Right offset (Vị trí Ngang) -->
-        <div class="debug-field">
-          <div class="debug-field-header">
-            <label>Vị trí Ngang (Right offset):</label>
-            <span class="debug-val" id="valRight">0vw</span>
-          </div>
-          <input type="range" id="inputRight" min="-30" max="35" step="0.5" value="0">
-        </div>
-
-        <!-- 4. Bottom offset (Vị trí Dọc) -->
-        <div class="debug-field">
-          <div class="debug-field-header">
-            <label>Vị trí Dọc (Bottom offset):</label>
-            <span class="debug-val" id="valBottom">-8.5vh</span>
-          </div>
-          <input type="range" id="inputBottom" min="-35" max="30" step="0.5" value="-8.5">
-        </div>
-
-        <!-- 5. Width -->
-        <div class="debug-field">
-          <div class="debug-field-header">
-            <label>Khung Ngang (Width):</label>
-            <span class="debug-val" id="valWidth">51.5vw</span>
-          </div>
-          <input type="range" id="inputWidth" min="30" max="95" step="0.5" value="51.5">
-        </div>
-
-        <!-- 6. Height -->
-        <div class="debug-field">
-          <div class="debug-field-header">
-            <label>Khung Dọc (Height):</label>
-            <span class="debug-val" id="valHeight">101vh</span>
-          </div>
-          <input type="range" id="inputHeight" min="50" max="140" step="0.5" value="101">
-        </div>
-
-        <div class="debug-divider"></div>
-
-        <!-- 7. Ripple X -->
-        <div class="debug-field">
-          <div class="debug-field-header">
-            <label>Tâm Sóng Tỏa X (Ripple Left):</label>
-            <span class="debug-val" id="valRippleX">69%</span>
-          </div>
-          <input type="range" id="inputRippleX" min="30" max="85" step="0.5" value="69">
-        </div>
-
-        <!-- 8. Ripple Y -->
-        <div class="debug-field">
-          <div class="debug-field-header">
-            <label>Tâm Sóng Tỏa Y (Ripple Top):</label>
-            <span class="debug-val" id="valRippleY">48%</span>
-          </div>
-          <input type="range" id="inputRippleY" min="20" max="80" step="0.5" value="48">
-        </div>
-
-        <div class="debug-divider"></div>
-
-        <!-- Output Code Box -->
-        <div class="debug-output-box">
-          <div class="debug-output-header">
-            <label>Mã Code CSS sinh ra:</label>
-            <button class="btn-copy-code" id="btnCopyCode">Sao chép Code</button>
-          </div>
-          <textarea readonly id="debugCodeArea" rows="7"></textarea>
-        </div>
-
-        <div class="debug-actions">
-          <button class="btn-reset-debug" id="btnResetDebug">Đặt lại ban đầu</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Toggle Button (in case minimized) -->
-    <button class="debug-toggle-btn" id="debugToggleBtn" title="Mở bảng căn chỉnh vị trí">
-      <span>Căn Chỉnh Cánh Tay</span>
-    </button>
-  </div>
-
-  <script src="script.js?v=v4"></script>
+  <!-- Scripts -->
+  <script src="vendor/morphicons.bundle.js"></script>
+  <script src="script.js?v=vi1"></script>
 </body>
 </html>
