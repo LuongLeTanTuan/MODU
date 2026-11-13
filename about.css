@@ -1,34 +1,35 @@
 /* ===================================================================
    MODU WATER BOTTLE - ABOUT PAGE STYLESHEET (EDITORIAL HARDWARE EDITION)
-   Designed with taste-skill & anti-ui-slop principles:
-   - Asymmetric split hero, generous whitespace, hardware museum gallery
-   - Zero cookie-cutter SaaS boxes, zero fake gradient text, zero em-dashes
-   - Velvety dark studio band (#151618) & parchment surfaces (#f5f5f7)
+   Brand Theme: Sky Blue (Màu Xanh Da Trời) Primary Brand Action Color
+   High contrast, crystal clear navigation bar, museum gallery aesthetic
    =================================================================== */
 
 :root {
   --font-display: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
   --font-body: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
 
-  /* MODU DESIGN.md Tokens */
-  --color-primary: #d4fc39;
-  --color-primary-hover: #bfee1a;
-  --color-on-primary: #151a14;
+  /* MODU Sky Blue Brand Tokens */
+  --color-primary: #0284c7;           /* Sky Blue Core */
+  --color-primary-hover: #0369a1;     /* Deep Sky Blue */
+  --color-primary-light: #38bdf8;     /* Bright Sky Accent */
+  --color-primary-soft: #f0f9ff;      /* Cloud Sky Tint */
+  --color-primary-border: #bae6fd;    /* Soft Sky Border */
+  --color-on-primary: #ffffff;
   
-  --color-ink: #1d1d1f;
-  --color-ink-muted: #6e6e73;
-  --color-ink-subtle: #86868b;
+  --color-ink: #0f172a;               /* Deep Ink */
+  --color-ink-muted: #475569;         /* Slate Muted */
+  --color-ink-subtle: #64748b;        /* Subtle Label */
   
   --color-canvas: #ffffff;
-  --color-parchment: #f5f5f7;
-  --color-studio-dark: #151618;
-  --color-studio-tile: #1d1d1f;
+  --color-parchment: #f8fafc;
+  --color-studio-dark: #0f172a;       /* Keynote Dark Slate */
+  --color-studio-card: #1e293b;
   
-  --color-hairline: #e5e5e7;
+  --color-hairline: #e2e8f0;
   --color-hairline-dark: rgba(255, 255, 255, 0.12);
 
   --radius-pill: 9999px;
-  --radius-lg: 18px;
+  --radius-lg: 20px;
 }
 
 /* Base Body */
@@ -49,10 +50,126 @@ body.modu-body {
   width: 100%;
   min-height: 100vh;
   background: var(--color-canvas);
-  padding-top: 80px;
+  padding-top: 90px;
 }
 
-/* Global Container */
+/* ===================================================================
+   HIGH CONTRAST NAVIGATION BAR (FIXED ON LIGHT CANVAS)
+   Overrides style.css white-on-white transparent styles
+   =================================================================== */
+body.modu-body .navbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 84px !important;
+  background: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03) !important;
+  z-index: 1000 !important;
+  box-sizing: border-box !important;
+  padding: 0 5vw !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+body.modu-body .brand-logo .logo-text {
+  color: #0f172a !important;
+  text-shadow: none !important;
+  font-size: 32px !important;
+  font-weight: 800 !important;
+}
+
+body.modu-body .brand-logo .logo-m {
+  color: var(--color-primary) !important; /* Sky Blue Brand Mark */
+}
+
+body.modu-body .nav-link {
+  color: #334155 !important;
+  font-size: 0.92rem !important;
+  font-weight: 600 !important;
+  transition: color 0.2s ease !important;
+}
+
+body.modu-body .nav-link:hover,
+body.modu-body .nav-link.active {
+  color: var(--color-primary) !important; /* Sky Blue */
+}
+
+body.modu-body .nav-link::after {
+  background-color: var(--color-primary) !important;
+}
+
+body.modu-body .nav-link.active::after {
+  width: 100% !important;
+}
+
+body.modu-body .morph-chevron {
+  stroke: #64748b !important;
+}
+
+body.modu-body .icon-btn {
+  color: #0f172a !important;
+  background: #f1f5f9 !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+body.modu-body .icon-btn:hover {
+  background: #e2e8f0 !important;
+  color: var(--color-primary) !important;
+  border-color: #cbd5e1 !important;
+  transform: translateY(-2px) !important;
+}
+
+body.modu-body .cart-badge {
+  background: var(--color-primary) !important;
+  color: #ffffff !important;
+}
+
+body.modu-body .navbar .btn-pill-lime,
+body.modu-body .navbar .btn-volt-pill {
+  background: var(--color-primary) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35) !important;
+}
+
+body.modu-body .navbar .btn-pill-lime:hover,
+body.modu-body .navbar .btn-volt-pill:hover {
+  background: var(--color-primary-hover) !important;
+  box-shadow: 0 8px 20px rgba(2, 132, 199, 0.45) !important;
+}
+
+body.modu-body .mobile-menu-btn {
+  color: #0f172a !important;
+}
+
+body.modu-body .mobile-menu-btn svg {
+  stroke: #0f172a !important;
+}
+
+body.modu-body .nav-search-bar {
+  background: #ffffff !important;
+  border: 1.5px solid var(--color-hairline) !important;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12) !important;
+}
+
+body.modu-body .nav-search-bar input {
+  color: #0f172a !important;
+}
+
+body.modu-body .nav-search-bar input::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* ===================================================================
+   CONTAINERS
+   =================================================================== */
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -70,7 +187,7 @@ body.modu-body {
    =================================================================== */
 .about-hero {
   padding: 5rem 0 6rem;
-  background: var(--color-canvas);
+  background: radial-gradient(ellipse at 50% -10%, rgba(2, 132, 199, 0.08) 0%, rgba(255, 255, 255, 0) 65%);
 }
 
 .hero-editorial-grid {
@@ -89,12 +206,14 @@ body.modu-body {
   font-family: var(--font-display);
   font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-ink-subtle);
+  color: var(--color-primary);
   margin-bottom: 1.6rem;
-  padding-bottom: 0.6rem;
-  border-bottom: 1.5px solid var(--color-ink);
+  padding: 6px 16px;
+  background: var(--color-primary-soft);
+  border: 1px solid var(--color-primary-border);
+  border-radius: var(--radius-pill);
 }
 
 .hero-headline {
@@ -122,29 +241,30 @@ body.modu-body {
   flex-wrap: wrap;
 }
 
-.btn-volt-pill {
+/* Primary Sky Blue Pill Button */
+.btn-sky-pill {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   background: var(--color-primary);
-  color: var(--color-on-primary);
+  color: #ffffff;
   font-family: var(--font-display);
-  font-size: 0.92rem;
+  font-size: 0.94rem;
   font-weight: 700;
-  padding: 13px 28px;
+  padding: 14px 30px;
   border-radius: var(--radius-pill);
   text-decoration: none;
-  box-shadow: 0 4px 14px rgba(212, 252, 57, 0.35);
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.35);
   transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.btn-volt-pill:hover {
+.btn-sky-pill:hover {
   background: var(--color-primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(212, 252, 57, 0.5);
+  box-shadow: 0 10px 26px rgba(2, 132, 199, 0.45);
 }
 
-.btn-volt-pill:active {
+.btn-sky-pill:active {
   transform: scale(0.96);
 }
 
@@ -162,7 +282,7 @@ body.modu-body {
 }
 
 .btn-link-simple:hover {
-  color: #0284c7;
+  color: var(--color-primary);
 }
 
 .hero-visual-col {
@@ -178,6 +298,7 @@ body.modu-body {
   overflow: hidden;
   background: var(--color-parchment);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--color-hairline);
 }
 
 .hero-image-wrap img {
@@ -196,7 +317,7 @@ body.modu-body {
    SECTION 1: EDITORIAL MANIFESTO (THE STORY)
    =================================================================== */
 .manifesto-section {
-  padding: 6rem 0;
+  padding: 6.5rem 0;
   border-top: 1px solid var(--color-hairline);
   background: var(--color-canvas);
 }
@@ -219,7 +340,7 @@ body.modu-body {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-ink-subtle);
+  color: var(--color-primary);
   margin-bottom: 1.2rem;
 }
 
@@ -255,7 +376,7 @@ body.modu-body {
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #0284c7;
+  color: var(--color-primary);
   margin-bottom: 0.6rem;
 }
 
@@ -277,7 +398,7 @@ body.modu-body {
 }
 
 /* ===================================================================
-   SECTION 2: HARDWARE ENGINEERING (DARK STUDIO BAND #151618)
+   SECTION 2: HARDWARE ENGINEERING (DARK KEYNOTE STUDIO #0F172A)
    =================================================================== */
 .hardware-section {
   background: var(--color-studio-dark);
@@ -297,7 +418,7 @@ body.modu-body {
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--color-primary);
+  color: var(--color-primary-light);
   margin-bottom: 1rem;
 }
 
@@ -348,7 +469,7 @@ body.modu-body {
   display: block;
   font-size: 0.8rem;
   font-weight: 500;
-  color: var(--color-primary);
+  color: var(--color-primary-light);
   margin-top: 4px;
 }
 
@@ -381,7 +502,7 @@ body.modu-body {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--color-primary);
+  background: var(--color-primary-light);
   flex-shrink: 0;
 }
 
@@ -412,12 +533,14 @@ body.modu-body {
   display: flex;
   flex-direction: column;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--color-hairline);
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
 }
 
 .capacity-spec-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+  border-color: var(--color-primary-border);
 }
 
 .capacity-visual {
@@ -446,7 +569,7 @@ body.modu-body {
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #0284c7;
+  color: var(--color-primary);
   margin-bottom: 0.5rem;
 }
 
@@ -517,6 +640,7 @@ body.modu-body {
   justify-content: center;
   align-items: center;
   position: relative;
+  border: 1px solid var(--color-hairline);
 }
 
 .color-stage-viewport img {
@@ -544,7 +668,7 @@ body.modu-body {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-ink-subtle);
+  color: var(--color-primary);
   margin-bottom: 1.2rem;
 }
 
@@ -560,7 +684,7 @@ body.modu-body {
   font-family: var(--font-display);
   font-size: 0.95rem;
   font-weight: 600;
-  color: #0284c7;
+  color: var(--color-primary);
   margin-bottom: 1rem;
 }
 
@@ -603,18 +727,19 @@ body.modu-body {
 .swatch-mint { background: #bbf7d0; }
 .swatch-white { background: #f8fafc; }
 .swatch-pink { background: #fbcfe8; }
-.swatch-blue { background: #bae6fd; }
+.swatch-blue { background: #38bdf8; }
 .swatch-black { background: #1f2937; }
 
 .color-swatch-item:hover {
-  border-color: var(--color-ink);
+  border-color: var(--color-primary);
   transform: translateY(-2px);
 }
 
 .color-swatch-item.active {
-  background: var(--color-ink);
-  border-color: var(--color-ink);
+  background: var(--color-primary);
+  border-color: var(--color-primary);
   color: #ffffff;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
 }
 
 .color-swatch-item.active .swatch-circle {
@@ -622,7 +747,7 @@ body.modu-body {
 }
 
 /* ===================================================================
-   SECTION 5: UNBOXING & GIFTS (AS HISTORIC GALLERY)
+   SECTION 5: UNBOXING & GIFTS (GALLERY EDITORIAL)
    =================================================================== */
 .unboxing-section {
   padding: 6.5rem 0;
@@ -640,6 +765,7 @@ body.modu-body {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--color-hairline);
 }
 
 .unboxing-photo-frame img {
@@ -664,7 +790,7 @@ body.modu-body {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-ink-subtle);
+  color: var(--color-primary);
   margin-bottom: 1.2rem;
 }
 
@@ -784,7 +910,11 @@ body.modu-body {
 
 @media (max-width: 768px) {
   .about-page-wrapper {
-    padding-top: 70px;
+    padding-top: 75px;
+  }
+
+  body.modu-body .navbar {
+    height: 72px !important;
   }
 
   .about-hero,
@@ -794,7 +924,7 @@ body.modu-body {
   .colors-section,
   .unboxing-section,
   .studio-cta-section {
-    padding: 4rem 0;
+    padding: 3.8rem 0;
   }
 
   .capacity-spec-card {
