@@ -138,7 +138,7 @@
 .keyword-tag-pill {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   padding: 8px 16px;
   background: #ffffff;
   border: 1px solid rgba(22, 60, 88, 0.14);
@@ -149,6 +149,17 @@
   text-decoration: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
   transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.keyword-tag-pill svg {
+  flex-shrink: 0;
+  stroke: currentColor;
+  stroke-width: 2;
+  transition: transform 0.2s ease;
+}
+
+.keyword-tag-pill:hover svg {
+  transform: scale(1.12);
 }
 
 .keyword-tag-pill:hover {

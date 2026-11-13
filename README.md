@@ -47,9 +47,14 @@ MODU/
 ```
 
 ---
-## 📚 Cẩm Nang & Blog MODU (10 Bài Viết Chuyên Sâu)
+## 📚 Cẩm Nang & Blog MODU (4 Bài Viết Chuẩn Chuyên Sâu)
 
-Mục **Blog** trên thanh điều hướng mở trang `blog/index.html`, gồm trọn bộ 10 bài viết cẩm nang tiếng Việt chuẩn SEO chuyên sâu về cá nhân hóa, khắc tên laser, chất liệu ruột bình Inox 316 chuẩn y tế, túi mù charm và set quà tặng cao cấp:
+Mục **Blog** trên thanh điều hướng mở trang `blog/index.html`, gồm trọn bộ 4 bài viết cẩm nang tiếng Việt chuẩn SEO chuyên sâu, kết nối mạng lưới Semantic Neural Links:
+
+1. **Bình giữ nhiệt theo yêu cầu in logo:** Tự thiết kế bình giữ nhiệt cá nhân hóa pastel đẹp (`blog/binh-giu-nhiet-modu-theo-yeu-cau/`)
+2. **Bình giữ nhiệt khắc tên theo yêu cầu:** Khẳng định dấu ấn cá nhân cùng MODU (`blog/binh-giu-nhiet-khac-ten-theo-yeu-cau/`)
+3. **Bắt trend decor bình giữ nhiệt:** Cực xinh với túi mù charm từ MODU (`blog/bat-trend-decor-binh-giu-nhiet-voi-tui-mu-charm-modu/`)
+4. **Set quà tặng bình giữ nhiệt cá nhân hóa:** Món quà ý nghĩa cho mọi dịp (`blog/set-qua-tang-binh-giu-nhiet-ca-nhan-hoa-inox-316/`)
 
 - Mỗi bài có URL tĩnh riêng, Schema.org BlogPosting & BreadcrumbList, Open Graph và hệ thống liên kết từ khóa chéo (Internal Linking & Keyword Tags).
 - Hệ thống bình luận tích hợp cơ sở dữ liệu thời gian thực.
