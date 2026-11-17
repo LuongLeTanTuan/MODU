@@ -73,6 +73,42 @@
   
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="style.css?v=v7">
+  <!-- SCHEMA.ORG VIDEO OBJECT (SEO RICH SNIPPETS) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "VideoObject",
+        "name": "Video Review Bình Giữ Nhiệt MODU Inox 316 Khắc Tên Pastel Thực Tế",
+        "description": "Video thực tế trải nghiệm bình giữ nhiệt MODU ruột Inox 316, khắc tên laser công nghệ cao và phụ kiện túi mù charm độc đáo phong cách Shopee Video.",
+        "thumbnailUrl": "https://modubottles.com/video/video-ugc-reel-poster.webp",
+        "uploadDate": "2026-11-17T08:00:00+07:00",
+        "duration": "PT10S",
+        "contentUrl": "https://modubottles.com/video/video-ugc-reel.mp4",
+        "embedUrl": "https://modubottles.com/index.html",
+        "publisher": {
+          "@type": "Organization",
+          "name": "MODU",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://modubottles.com/Logo%20MODU%20h%C3%ACnh%20h%E1%BB%8Dc%20t%E1%BB%91i%20gi%E1%BA%A3n.png"
+          }
+        }
+      },
+      {
+        "@type": "VideoObject",
+        "name": "Quy Trình Khắc Laser Sợi Quang Không Phai Trên Bình Giữ Nhiệt MODU",
+        "description": "Cận cảnh máy khắc laser sợi quang công nghệ cao khắc tên nghệ thuật và icon theo yêu cầu trên bề mặt sơn tĩnh điện bình giữ nhiệt MODU.",
+        "thumbnailUrl": "https://modubottles.com/video/video-laser-engraving-poster.webp",
+        "uploadDate": "2026-11-17T08:00:00+07:00",
+        "duration": "PT10S",
+        "contentUrl": "https://modubottles.com/video/video-laser-engraving.mp4",
+        "embedUrl": "https://modubottles.com/index.html#page-personalize"
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="modu-body">
 
@@ -104,7 +140,7 @@
         </a>
       </div>
       <div class="nav-item dropdown">
-        <a href="#page-checkout" class="nav-link">
+        <a href="#page-personalize" class="nav-link">
           <span>Phụ kiện</span>
           <svg class="morph-chevron" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M6 9C8 11 10 13 12 15C14 13 16 11 18 9"></path>
@@ -217,8 +253,6 @@
 
       <!-- HERO LEFT COLUMN: Tag, Title, Desc, CTA and Color Explorer Card -->
       <div class="hero-left-col">
-        <span class="hero-brand-tag">TỰ THIẾT KẾ BỞI BẠN</span>
-        
         <h1 class="hero-main-title">
           Bình giữ nhiệt<br>
           cho mọi<br>
@@ -291,8 +325,6 @@
 
       <!-- LEFT COLUMN: Headline, Story & 3 Feature Badges -->
       <div class="personalize-left-col">
-        <span class="hero-brand-tag">TỰ THIẾT KẾ BỞI BẠN</span>
-
         <h2 class="section-big-title">
           Cá nhân hóa<br>
           bình của bạn.
@@ -343,7 +375,7 @@
         </div>
       </div>
 
-      <!-- CENTER VISUAL: Live Interactive MODU Bottle with Laser Engraving & Hanging Charm -->
+            <!-- CENTER VISUAL: Live Interactive MODU Bottle with Laser Engraving & Hanging Charm -->
       <div class="personalize-visual-center">
         <div class="interactive-bottle-wrapper" id="interactiveBottleWrapper">
           <!-- Main Bottle Body Image (Tilted ~18deg matching reference) -->
@@ -425,6 +457,10 @@
               <div class="step-num-title">
                 <span class="step-num-pill">2</span>
                 <span class="step-title-text">KHẮC TÊN</span>
+                <button type="button" class="btn-step-video-link" id="btnOpenLaserVideoModal" aria-label="Xem video khắc laser thực tế" title="Xem video thực tế 10s">
+                  <span class="video-play-triangle">▶</span>
+                  <span>Video khắc thật</span>
+                </button>
               </div>
               <span class="step-current-name" id="step3EngraveName">Olivia ♡</span>
             </div>
@@ -501,7 +537,7 @@
           <div class="customizer-action-bar">
             <div class="price-spec-block">
               <span class="spec-label">Bình giữ nhiệt MODU</span>
-              <strong class="spec-price" id="customizerPrice">$34.00</strong>
+              <strong class="spec-price" id="customizerPrice">459.000₫</strong>
             </div>
 
             <button type="button" class="btn-add-cart-lime" id="btnAddToCart">
@@ -534,8 +570,6 @@
 
       <!-- LEFT COLUMN: Headline, Story & 3 Trust Badges -->
       <div class="checkout-left-col">
-        <span class="hero-brand-tag">TỰ THIẾT KẾ BỞI BẠN</span>
-
         <h2 class="section-big-title">
           Thanh toán<br>
           bình của bạn.
@@ -658,7 +692,7 @@
               <div class="summary-details">
                 <div class="summary-item-top">
                   <h3 class="summary-product-title">Bình giữ nhiệt MODU</h3>
-                  <span class="summary-product-price" id="summaryProductPrice">$34.00</span>
+                  <span class="summary-product-price" id="summaryProductPrice">459.000₫</span>
                 </div>
                 <p class="summary-spec-text" id="summaryColorsSpec">Xanh bạc hà / Quai xanh bạc hà</p>
                 <p class="summary-spec-text" id="summaryDetailsSpec">Olivia ♡ / Hoa cúc</p>
@@ -684,7 +718,7 @@
               </div>
               <div class="row-address-info">
                 <strong class="info-title">Địa chỉ giao hàng</strong>
-                <span class="info-value" id="shippingAddressValue">123 Sunny Lane, San Diego, CA</span>
+                <span class="info-value" id="shippingAddressValue">Quận 1, TP. Hồ Chí Minh</span>
               </div>
               <span class="row-chevron-arrow">&rsaquo;</span>
             </div>
@@ -742,7 +776,7 @@
             <div class="complete-order-body">
               <div class="order-total-row">
                 <span class="total-label">Tổng cộng</span>
-                <strong class="total-amount" id="finalTotalAmount">$34.00</strong>
+                <strong class="total-amount" id="finalTotalAmount">459.000₫</strong>
               </div>
 
               <button type="button" class="btn-pay-now-lime" id="btnFinalPayNow">
@@ -771,43 +805,44 @@
   </main>
 
   <!-- ================= SLEEK TEXT FOOTER (SUPPORT SECTION) ================= -->
+  <!-- ================= SLEEK TEXT FOOTER (SUPPORT SECTION) ================= -->
   <footer class="modu-footer" id="support">
     <!-- Top Feature Trust Badges -->
     <div class="footer-trust-grid">
       <div class="trust-item">
         <div class="trust-icon-box">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <div class="trust-text">
           <strong>Inox 316 Chuẩn Y Tế</strong>
-          <span>Kháng axit &amp; giữ nhiệt 24h</span>
+          <span>Lõi kép cách nhiệt chân không, giữ nhiệt 24h</span>
         </div>
       </div>
       <div class="trust-item">
         <div class="trust-icon-box">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </div>
         <div class="trust-text">
           <strong>Khắc Laser Độc Bản</strong>
-          <span>Tùy biến tên &amp; font nghệ thuật</span>
+          <span>Fiber Laser sắc nét vĩnh viễn, tùy chọn font nghệ thuật</span>
         </div>
       </div>
       <div class="trust-item">
         <div class="trust-icon-box">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
         </div>
         <div class="trust-text">
-          <strong>Hộp Quà Cao Cấp</strong>
-          <span>Thiệp chúc mừng &amp; túi canvas</span>
+          <strong>Túi Mù Charm &amp; Quà Tặng</strong>
+          <span>Phụ kiện blind bag bất ngờ &amp; túi canvas tặng kèm</span>
         </div>
       </div>
       <div class="trust-item">
         <div class="trust-icon-box">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
         </div>
         <div class="trust-text">
           <strong>Đổi Mới 1:1 Toàn Quốc</strong>
-          <span>Bảo hành chính hãng 12 tháng</span>
+          <span>Bảo hành giữ nhiệt 12 tháng, đồng kiểm khi nhận</span>
         </div>
       </div>
     </div>
@@ -821,11 +856,8 @@
           </div>
         </a>
         <p class="footer-brand-bio">
-          Dòng bình giữ nhiệt thời trang cá nhân hóa từ thép không gỉ 316 chuẩn y tế. Kết hợp giữa công năng giữ nhiệt đỉnh cao và nghệ thuật tự do sáng tạo.
+          <strong>MODU</strong> (Modify + You) — Dòng bình giữ nhiệt thời trang cá nhân hóa từ thép Inox 316 chuẩn y tế. Định hình phong cách sống xanh và tôn vinh cái tôi độc bản của người trẻ qua từng nét khắc và phụ kiện charm sưu tầm.
         </p>
-        <div class="footer-slogan-pill">
-          <span class="slogan-sparkle">✨</span> Tự thiết kế – Tự thể hiện – Mang dấu ấn riêng
-        </div>
         <div class="footer-social-row" aria-label="Mạng xã hội MODU">
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="MODU trên Instagram" title="Instagram">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
@@ -842,57 +874,91 @@
         </div>
       </div>
 
-      <!-- Col 2: Navigation -->
+      <!-- Col 2: Hệ Sinh Thái MODU -->
       <div class="footer-col">
-        <h4>Trang &amp; Khám Phá</h4>
+        <h4>Hệ Sinh Thái MODU</h4>
         <ul>
-          <li><a href="#page-hero">Showcase Bình Nước</a></li>
-          <li><a href="#page-personalize">Studio Tự Thiết Kế 3D</a></li>
-          <li><a href="#page-checkout">Kiểm Tra Đơn &amp; Phụ Kiện</a></li>
-          <li><a href="about.html">Câu Chuyện Thương Hiệu</a></li>
+          <li><a href="#page-personalize">Studio Tự Thiết Kế 3D Trực Quan</a></li>
+          <li><a href="#page-hero">Bộ Sưu Tập Màu Pastel &amp; Matte</a></li>
+          <li><a href="blog/bat-trend-decor-binh-giu-nhiet-voi-tui-mu-charm-modu/index.html">Túi Mù Charm Độc Quyền (Blind Bag)</a></li>
+          <li><a href="blog/set-qua-tang-binh-giu-nhiet-ca-nhan-hoa-inox-316/index.html">Set Quà Tặng MODU Gift Box</a></li>
+          <li><a href="about.html">Câu Chuyện &amp; Sứ Mệnh Sống Xanh</a></li>
           <li><a href="blog/index.html">Blog &amp; Cẩm Nang Cá Nhân Hóa</a></li>
         </ul>
       </div>
 
-      <!-- Col 3: Knowledge & Guides -->
+      <!-- Col 3: Chính Sách & Cam Kết Vàng -->
       <div class="footer-col">
-        <h4>Cẩm Nang &amp; Hỗ Trợ</h4>
+        <h4>Chính Sách &amp; Cam Kết</h4>
         <ul>
-          <li><a href="blog/binh-giu-nhiet-modu-theo-yeu-cau/index.html">Thiết Kế Bình Theo Yêu Cầu</a></li>
-          <li><a href="blog/binh-giu-nhiet-khac-ten-theo-yeu-cau/index.html">Khắc Tên Laser Độc Bản</a></li>
-          <li><a href="blog/bat-trend-decor-binh-giu-nhiet-voi-tui-mu-charm-modu/index.html">Bắt Trend Túi Mù Charm Decor</a></li>
-          <li><a href="blog/set-qua-tang-binh-giu-nhiet-ca-nhan-hoa-inox-316/index.html">Set Quà Tặng Bình Giữ Nhiệt</a></li>
-          <li><a href="blog/index.html">Xem Trọn Bộ 4 Cẩm Nang ↗</a></li>
+          <li><a href="blog/binh-giu-nhiet-khac-ten-theo-yeu-cau/index.html">Bảo Hành Giữ Nhiệt 12 Tháng 1 Đổi 1</a></li>
+          <li><a href="blog/binh-giu-nhiet-modu-theo-yeu-cau/index.html">Cam Kết 100% Inox 316 Chuẩn Y Tế</a></li>
+          <li><a href="#page-checkout">Đồng Kiểm Khi Nhận Hàng</a></li>
+          <li><a href="about.html#journey">Quy Trình Khắc Fiber Laser Sắc Nét</a></li>
+          <li><a href="javascript:void(0)">Chính Sách Đổi Trả Trong 7 Ngày</a></li>
+          <li><a href="javascript:void(0)">Hướng Dẫn Vệ Sinh &amp; Bảo Quản Bình</a></li>
         </ul>
       </div>
 
-      <!-- Col 4: Newsletter -->
+      <!-- Col 4: Hỗ Trợ & Bản Tin -->
       <div class="footer-col footer-newsletter">
-        <h4>Bản Tin MODU</h4>
-        <p>Đăng ký nhận thông tin về các bộ charm phiên bản giới hạn và quà tặng độc quyền từ MODU.</p>
+        <h4>Kết Nối &amp; Bản Tin</h4>
+        <p>Đăng ký email để nhận ngay voucher giảm 10% cho đơn hàng đầu tiên và cập nhật sớm các bộ sưu tập charm giới hạn.</p>
         <div class="footer-capsule-row">
-          <input type="email" placeholder="Email của bạn..." id="newsletterInput" aria-label="Nhập email của bạn">
+          <input type="email" placeholder="Nhập email của bạn..." id="newsletterInput" aria-label="Nhập email của bạn">
           <button type="button" id="btnNewsletter" class="footer-capsule-btn">
             <span>Đăng Ký</span>
             <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </button>
         </div>
-        <span class="footer-newsletter-note">Cam kết không spam · Hủy đăng ký bất cứ lúc nào</span>
+        <span class="footer-newsletter-note">Cam kết không spam · Hủy đăng ký bất kỳ lúc nào</span>
+        <div style="margin-top: 18px; display: flex; flex-direction: column; gap: 8px;">
+          <div class="footer-info-item">
+            <svg class="footer-info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Hotline CSKH: <strong>1900 88 66 33</strong> (8:30 - 21:30)</span>
+          </div>
+          <div class="footer-info-item">
+            <svg class="footer-info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>Email hỗ trợ: <strong>support@modubottles.com</strong></span>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="footer-bottom">
       <div class="footer-bottom-copy">
-        &copy; 2026 MODU Lifestyle Inc. Tất cả quyền được bảo lưu. Thiết kế dành cho thế hệ sáng tạo.
+        &copy; 2026 MODU (Modify + You) Lifestyle Inc. Tôn trọng sự độc bản &amp; Lối sống bền vững.
       </div>
       <div class="footer-bottom-links">
         <a href="javascript:void(0)">Chính Sách Bảo Mật</a>
-        <a href="javascript:void(0)">Điều Khoản Sử Dụng</a>
-        <a href="javascript:void(0)">Chính Sách Bảo Hành</a>
-        <a href="javascript:void(0)">Hướng Dẫn Vệ Sinh</a>
+        <a href="javascript:void(0)">Điều Khoản Dịch Vụ</a>
+        <a href="javascript:void(0)">Chính Sách Bảo Hành &amp; Đổi Trả</a>
+        <a href="javascript:void(0)">Chứng Nhận Inox 316</a>
       </div>
     </div>
   </footer>
+
+  <!-- ================= PROMOTIONAL TOPUP BANNER (SHOPEE STYLE) ================= -->
+  <div class="promo-banner-overlay" id="promoBannerOverlay" aria-hidden="true">
+    <div class="promo-banner-container" role="dialog" aria-modal="true" aria-label="Khuyến mãi MODU Giảm Đến 50%">
+      <button type="button" class="promo-banner-close" id="btnPromoBannerClose" aria-label="Đóng banner khuyến mãi">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <a href="#page-personalize" class="promo-banner-link" id="promoBannerLink" title="Khám phá ngay ưu đãi giảm đến 50%">
+        <img 
+          src="bannerqc.png" 
+          alt="MODU - Bình nước của bạn, bản sắc của bạn - Giảm đến 50% - #MyMODUBottle - Tham gia ngay" 
+          class="promo-banner-img"
+          width="1122" 
+          height="1402"
+        >
+      </a>
+    </div>
+  </div>
 
   <!-- ================= EDIT SHIPPING ADDRESS MODAL ================= -->
   <div class="address-modal-overlay" id="addressModalOverlay" aria-hidden="true">
@@ -905,7 +971,7 @@
       </div>
       <div class="address-modal-body">
         <label for="addressInput">Địa chỉ &amp; thành phố</label>
-        <input type="text" id="addressInput" class="address-field" value="123 Sunny Lane, San Diego, CA">
+        <input type="text" id="addressInput" class="address-field" value="Quận 1, TP. Hồ Chí Minh" placeholder="Số nhà, tên đường, phường/xã, quận/huyện, TP...">
       </div>
       <div class="address-modal-footer">
         <button type="button" class="btn-modal-cancel" id="btnCancelAddress">Hủy</button>
@@ -928,7 +994,7 @@
       </div>
 
       <p class="success-desc">
-        Bình giữ nhiệt MODU của bạn đang được khắc laser tận tâm tại studio của chúng tôi ở California. Liên kết theo dõi đơn hàng đã được gửi đến email của bạn.
+        Bình giữ nhiệt MODU của bạn đang được khắc laser sắc nét và đóng gói tận tâm tại studio MODU. Liên kết theo dõi đơn hàng đã được gửi đến email của bạn.
       </p>
 
       <div class="success-actions">
@@ -953,7 +1019,7 @@
         <div class="cart-item-info">
           <div class="cart-item-title">Bình giữ nhiệt MODU</div>
           <div class="cart-item-spec" id="cartItemSpec">Xanh bạc hà / Quai xanh bạc hà • Olivia ♡ • Hoa cúc</div>
-          <div class="cart-item-price">$34.00</div>
+          <div class="cart-item-price">459.000₫</div>
         </div>
       </div>
     </div>
@@ -961,7 +1027,7 @@
     <div class="cart-drawer-footer">
       <div class="cart-subtotal">
         <span>Tạm tính</span>
-        <span id="cartSubtotalAmount">$34.00</span>
+        <span id="cartSubtotalAmount">459.000₫</span>
       </div>
       <button class="btn-checkout-drawer" id="btnDrawerCheckout">
         <span>Tiến hành thanh toán</span>
@@ -983,5 +1049,80 @@
   <!-- Scripts -->
   <script src="vendor/morphicons.bundle.js"></script>
   <script src="script.js?v=vi1"></script>
+    <!-- ===================================================================
+       BESPOKE FLOATING REEL STORY CAPSULE
+       =================================================================== -->
+  <aside class="shopee-floating-reel" id="shopeeFloatingReel" aria-label="Trải nghiệm video thực tế">
+    <div class="reel-capsule-card">
+      <button type="button" class="shopee-reel-bubble-btn" id="btnOpenShopeeReel" aria-label="Mở xem video review thực tế 10s">
+        <div class="reel-bubble-thumb">
+          <video class="reel-thumb-video" autoplay muted loop playsinline preload="metadata" poster="video/video-ugc-reel-poster.webp">
+            <source src="video/video-ugc-reel.mp4" type="video/mp4">
+          </video>
+          <span class="reel-play-icon-overlay" aria-hidden="true">▶</span>
+        </div>
+        <div class="reel-bubble-info">
+          <span class="reel-info-title">Trải nghiệm thực tế</span>
+          <span class="reel-info-sub">Khui bình &amp; charm • 10s</span>
+        </div>
+      </button>
+      <button type="button" class="shopee-reel-close-btn" id="btnCloseShopeeBubble" aria-label="Đóng video review" title="Đóng">✕</button>
+    </div>
+  </aside>
+
+  <!-- ===================================================================
+       SHOPEE VIDEO / TIKTOK REEL LIGHTBOX MODAL
+       =================================================================== -->
+  <div class="shopee-video-modal-overlay" id="shopeeVideoModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Trình phát Shopee Video MODU">
+    <div class="shopee-video-modal-dialog">
+      <button type="button" class="modal-close-round" id="btnCloseShopeeVideoModal" aria-label="Đóng video">✕</button>
+      
+      <!-- Top Tab Switcher: Review, Laser, Charm -->
+      <div class="modal-video-tabs">
+        <button type="button" class="modal-tab-btn active" data-video-src="video/video-ugc-reel.mp4" data-video-title="Bình Giữ Nhiệt MODU Pastel Inox 316" data-video-poster="video/video-ugc-reel-poster.webp">
+          <span>Khách Review</span>
+        </button>
+        <button type="button" class="modal-tab-btn" data-video-src="video/video-laser-engraving.mp4" data-video-title="Khắc Laser Sợi Quang Không Phai MODU" data-video-poster="video/video-laser-engraving-poster.webp">
+          <span>Khắc Laser</span>
+        </button>
+        <button type="button" class="modal-tab-btn" data-video-src="video/video-blindbag-charm.mp4" data-video-title="Túi Mù Charm Decor Bình Nước MODU" data-video-poster="video/video-blindbag-charm-poster.webp">
+          <span>Khui Túi Mù</span>
+        </button>
+      </div>
+
+      <!-- Main Video Player -->
+      <div class="shopee-modal-player-wrap">
+        <video id="shopeeModalVideo" class="shopee-main-video" autoplay loop playsinline preload="auto" poster="video/video-ugc-reel-poster.webp">
+          <source src="video/video-ugc-reel.mp4" type="video/mp4">
+        </video>
+        <button type="button" class="btn-shopee-sound-toggle" id="btnModalSoundToggle" aria-label="Bật hoặc tắt tiếng">
+          <span class="sound-icon-muted">🔇</span>
+          <span class="sound-icon-unmuted" style="display:none;">🔊</span>
+        </button>
+        <div class="video-progress-bar"><div class="video-progress-fill" id="videoProgressFill"></div></div>
+      </div>
+
+      <!-- Refined MODU Glassmorphism Product Pill at Bottom -->
+      <div class="shopee-modal-product-card">
+        <img src="assets/bottle-mint-500.png" alt="Bình giữ nhiệt MODU Inox 316" class="shopee-card-thumb">
+        <div class="shopee-card-info">
+          <div class="shopee-card-title-row">
+            <h4 class="shopee-card-title" id="shopeeModalVideoTitle">Bình Giữ Nhiệt MODU Pastel Inox 316</h4>
+          </div>
+          <div class="shopee-card-price-row">
+            <span class="price-current">459.000₫</span>
+            <span class="price-old">918.000₫</span>
+            <span class="voucher-tag">Ưu đãi giới hạn</span>
+          </div>
+          <p class="shopee-card-desc">Khắc tên theo yêu cầu &amp; tặng kèm túi mù charm</p>
+        </div>
+        <button type="button" class="btn-shopee-buy-now" id="btnModalBuyNow">
+          <span>Tự thiết kế</span>
+          <span class="arrow-icon">↗</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>

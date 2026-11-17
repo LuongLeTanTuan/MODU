@@ -122,4 +122,15 @@
       });
     }
   });
+
+  // Blog Shopee Video Sound Toggle
+  const blogCharmVideo = document.getElementById('blogCharmVideo');
+  const btnToggleBlogVideoSound = document.getElementById('btnToggleBlogVideoSound');
+  if (blogCharmVideo && btnToggleBlogVideoSound) {
+    btnToggleBlogVideoSound.addEventListener('click', () => {
+      blogCharmVideo.muted = !blogCharmVideo.muted;
+      btnToggleBlogVideoSound.textContent = blogCharmVideo.muted ? '🔇' : '🔊';
+    });
+  }
+
 })();

@@ -23,7 +23,23 @@ document.addEventListener('DOMContentLoaded', () => {
       if (isSearchActive && searchInput) {
         setTimeout(() => searchInput.focus(), 150);
       }
+    
+  // Cinematic Video Sound Toggle
+  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
+  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
+  if (brandCinematicVideo && btnToggleCinematicSound) {
+    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
+    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
+    btnToggleCinematicSound.addEventListener('click', () => {
+      brandCinematicVideo.muted = !brandCinematicVideo.muted;
+      if (soundOff && soundOn) {
+        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
+        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
+      }
     });
+  }
+
+});
 
     if (searchClearBtn && searchInput) {
       searchClearBtn.addEventListener('click', (e) => {
@@ -39,7 +55,23 @@ document.addEventListener('DOMContentLoaded', () => {
             window.Morphicons.morphElement('#searchIconPath', 'Search', 'snappy');
           }
         }
-      });
+      
+  // Cinematic Video Sound Toggle
+  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
+  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
+  if (brandCinematicVideo && btnToggleCinematicSound) {
+    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
+    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
+    btnToggleCinematicSound.addEventListener('click', () => {
+      brandCinematicVideo.muted = !brandCinematicVideo.muted;
+      if (soundOff && soundOn) {
+        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
+        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
+      }
+    });
+  }
+
+});
     }
 
     if (searchInput) {
@@ -57,7 +89,23 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = `index.html#page-personalize`;
           }
         }
-      });
+      
+  // Cinematic Video Sound Toggle
+  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
+  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
+  if (brandCinematicVideo && btnToggleCinematicSound) {
+    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
+    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
+    btnToggleCinematicSound.addEventListener('click', () => {
+      brandCinematicVideo.muted = !brandCinematicVideo.muted;
+      if (soundOff && soundOn) {
+        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
+        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
+      }
+    });
+  }
+
+});
     }
 
     document.addEventListener('click', (e) => {
@@ -69,7 +117,23 @@ document.addEventListener('DOMContentLoaded', () => {
           window.Morphicons.morphElement('#searchIconPath', 'Search', 'snappy');
         }
       }
+    
+  // Cinematic Video Sound Toggle
+  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
+  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
+  if (brandCinematicVideo && btnToggleCinematicSound) {
+    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
+    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
+    btnToggleCinematicSound.addEventListener('click', () => {
+      brandCinematicVideo.muted = !brandCinematicVideo.muted;
+      if (soundOff && soundOn) {
+        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
+        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
+      }
     });
+  }
+
+});
   }
 
   // Mobile Nav Drawer Toggle with Morphicons Morphing
@@ -84,7 +148,23 @@ document.addEventListener('DOMContentLoaded', () => {
       if (window.Morphicons) {
         window.Morphicons.morphElement('#mobileMenuPath', isOpen ? 'X' : 'Menu', 'bouncy');
       }
+    
+  // Cinematic Video Sound Toggle
+  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
+  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
+  if (brandCinematicVideo && btnToggleCinematicSound) {
+    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
+    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
+    btnToggleCinematicSound.addEventListener('click', () => {
+      brandCinematicVideo.muted = !brandCinematicVideo.muted;
+      if (soundOff && soundOn) {
+        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
+        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
+      }
     });
+  }
+
+});
 
     mobileNavPanel.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
@@ -94,8 +174,40 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.Morphicons) {
           window.Morphicons.morphElement('#mobileMenuPath', 'Menu', 'snappy');
         }
-      });
+      
+  // Cinematic Video Sound Toggle
+  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
+  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
+  if (brandCinematicVideo && btnToggleCinematicSound) {
+    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
+    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
+    btnToggleCinematicSound.addEventListener('click', () => {
+      brandCinematicVideo.muted = !brandCinematicVideo.muted;
+      if (soundOff && soundOn) {
+        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
+        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
+      }
     });
+  }
+
+});
+    
+  // Cinematic Video Sound Toggle
+  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
+  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
+  if (brandCinematicVideo && btnToggleCinematicSound) {
+    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
+    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
+    btnToggleCinematicSound.addEventListener('click', () => {
+      brandCinematicVideo.muted = !brandCinematicVideo.muted;
+      if (soundOff && soundOn) {
+        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
+        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
+      }
+    });
+  }
+
+});
   }
 
   // Interactive Color Palette Switcher
@@ -168,8 +280,40 @@ document.addEventListener('DOMContentLoaded', () => {
       if (colorNameEl) colorNameEl.textContent = data.name;
       if (colorTagEl) colorTagEl.textContent = data.tag;
       if (colorDescEl) colorDescEl.textContent = data.desc;
+    
+  // Cinematic Video Sound Toggle
+  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
+  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
+  if (brandCinematicVideo && btnToggleCinematicSound) {
+    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
+    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
+    btnToggleCinematicSound.addEventListener('click', () => {
+      brandCinematicVideo.muted = !brandCinematicVideo.muted;
+      if (soundOff && soundOn) {
+        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
+        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
+      }
     });
-  });
+  }
+
+});
+  
+  // Cinematic Video Sound Toggle
+  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
+  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
+  if (brandCinematicVideo && btnToggleCinematicSound) {
+    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
+    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
+    btnToggleCinematicSound.addEventListener('click', () => {
+      brandCinematicVideo.muted = !brandCinematicVideo.muted;
+      if (soundOff && soundOn) {
+        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
+        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
+      }
+    });
+  }
+
+});
 
   // Newsletter Submit Feedback
   const newsletterBtn = document.getElementById('btnAboutNewsletter');
@@ -187,6 +331,38 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         alert('Vui lòng nhập địa chỉ email hợp lệ!');
       }
+    
+  // Cinematic Video Sound Toggle
+  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
+  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
+  if (brandCinematicVideo && btnToggleCinematicSound) {
+    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
+    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
+    btnToggleCinematicSound.addEventListener('click', () => {
+      brandCinematicVideo.muted = !brandCinematicVideo.muted;
+      if (soundOff && soundOn) {
+        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
+        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
+      }
     });
   }
+
+});
+  }
+
+  // Cinematic Video Sound Toggle
+  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
+  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
+  if (brandCinematicVideo && btnToggleCinematicSound) {
+    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
+    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
+    btnToggleCinematicSound.addEventListener('click', () => {
+      brandCinematicVideo.muted = !brandCinematicVideo.muted;
+      if (soundOff && soundOn) {
+        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
+        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
+      }
+    });
+  }
+
 });

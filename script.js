@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
     hasHeart: true,
     font: 'brittany',
     charm: 'daisy',
-    price: 34.00,
-    address: '123 Sunny Lane, San Diego, CA',
+    price: 459000,
+    address: 'Quận 1, TP. Hồ Chí Minh',
     paymentMethod: 'visa',
     cartCount: 1
   };
@@ -792,8 +792,245 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ===================================================================
+     PROMOTIONAL TOPUP BANNER (SHOPEE STYLE)
+     =================================================================== */
+  const promoBannerOverlay = document.getElementById('promoBannerOverlay');
+  const btnPromoBannerClose = document.getElementById('btnPromoBannerClose');
+  const promoBannerLink = document.getElementById('promoBannerLink');
+
+  function openPromoBanner() {
+    if (!promoBannerOverlay) return;
+    promoBannerOverlay.classList.add('active');
+    promoBannerOverlay.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closePromoBanner() {
+    if (!promoBannerOverlay) return;
+    promoBannerOverlay.classList.remove('active');
+    promoBannerOverlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  if (promoBannerOverlay && btnPromoBannerClose) {
+    // Show banner smoothly after page elements initialize (400ms delay)
+    setTimeout(() => {
+      openPromoBanner();
+    }, 400);
+
+    btnPromoBannerClose.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closePromoBanner();
+    });
+
+    promoBannerOverlay.addEventListener('click', (e) => {
+      if (e.target === promoBannerOverlay) {
+        closePromoBanner();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && promoBannerOverlay.classList.contains('active')) {
+        closePromoBanner();
+      }
+    });
+
+    if (promoBannerLink) {
+      promoBannerLink.addEventListener('click', (e) => {
+        closePromoBanner();
+        const target = document.getElementById('page-personalize');
+        if (target) {
+          e.preventDefault();
+          setTimeout(() => {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }, 120);
+        }
+      });
+    }
+  }
+
+  /* ===================================================================
      10. INITIALIZATION
      =================================================================== */
+
+  /* ===================================================================
+     11. SHOPEE VIDEO & FLOATING REEL WIDGET SUITE
+     =================================================================== */
+  const shopeeFloatingReel = document.getElementById('shopeeFloatingReel');
+  const btnOpenShopeeReel = document.getElementById('btnOpenShopeeReel');
+  const btnCloseShopeeBubble = document.getElementById('btnCloseShopeeBubble');
+  const shopeeVideoModal = document.getElementById('shopeeVideoModal');
+  const btnCloseShopeeVideoModal = document.getElementById('btnCloseShopeeVideoModal');
+  const shopeeModalVideo = document.getElementById('shopeeModalVideo');
+  const btnModalSoundToggle = document.getElementById('btnModalSoundToggle');
+  const videoProgressFill = document.getElementById('videoProgressFill');
+  const shopeeModalVideoTitle = document.getElementById('shopeeModalVideoTitle');
+  const btnModalBuyNow = document.getElementById('btnModalBuyNow');
+  const modalTabBtns = document.querySelectorAll('.modal-tab-btn');
+
+  const btnOpenLaserVideoModal = document.getElementById('btnOpenLaserVideoModal');
+  const btnOpenCharmVideoModal = document.getElementById('btnOpenCharmVideoModal');
+  const btnSwitchViewLaserVideo = document.getElementById('btnSwitchViewLaserVideo');
+  const btnSwitchView3D = document.getElementById('btnSwitchView3D');
+
+  function openShopeeVideo(src, title, poster, activeTabIdx = 0) {
+    if (shopeeFloatingReel) shopeeFloatingReel.style.display = 'none';
+    if (!shopeeVideoModal || !shopeeModalVideo) return;
+    shopeeVideoModal.classList.add('active');
+    shopeeVideoModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+
+    // Switch video source
+    if (src && shopeeModalVideo.getAttribute('src') !== src) {
+      shopeeModalVideo.src = src;
+      if (poster) shopeeModalVideo.poster = poster;
+      shopeeModalVideo.load();
+    }
+    if (title && shopeeModalVideoTitle) {
+      shopeeModalVideoTitle.textContent = title;
+    }
+
+    // Set active tab
+    modalTabBtns.forEach((btn, idx) => {
+      btn.classList.toggle('active', idx === activeTabIdx);
+    });
+
+    shopeeModalVideo.currentTime = 0;
+    shopeeModalVideo.muted = true; // default muted for autoplay compliance
+    updateSoundIcons(true);
+
+    const playPromise = shopeeModalVideo.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(err => {
+        console.log('Video autoplay prevented:', err);
+      });
+    }
+  }
+
+  function closeShopeeVideo() {
+    if (shopeeFloatingReel) shopeeFloatingReel.style.display = 'flex';
+    if (!shopeeVideoModal || !shopeeModalVideo) return;
+    shopeeVideoModal.classList.remove('active');
+    shopeeVideoModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    shopeeModalVideo.pause();
+  }
+
+  function updateSoundIcons(isMuted) {
+    if (!btnModalSoundToggle) return;
+    const iconMuted = btnModalSoundToggle.querySelector('.sound-icon-muted');
+    const iconUnmuted = btnModalSoundToggle.querySelector('.sound-icon-unmuted');
+    if (iconMuted && iconUnmuted) {
+      iconMuted.style.display = isMuted ? 'inline' : 'none';
+      iconUnmuted.style.display = isMuted ? 'none' : 'inline';
+    }
+  }
+
+  // Open from floating reel
+  if (btnOpenShopeeReel) {
+    btnOpenShopeeReel.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openShopeeVideo('video/video-ugc-reel.mp4', 'Bình Giữ Nhiệt MODU Pastel Inox 316', 'video/video-ugc-reel-poster.webp', 0);
+    });
+  }
+
+  // Dismiss floating bubble
+  if (btnCloseShopeeBubble && shopeeFloatingReel) {
+    btnCloseShopeeBubble.addEventListener('click', (e) => {
+      e.stopPropagation();
+      shopeeFloatingReel.style.opacity = '0';
+      shopeeFloatingReel.style.transform = 'scale(0.8) translateY(20px)';
+      shopeeFloatingReel.style.pointerEvents = 'none';
+      setTimeout(() => {
+        shopeeFloatingReel.style.display = 'none';
+      }, 350);
+    });
+  }
+
+  // Open from Laser Engraving button in Step 2
+  if (btnOpenLaserVideoModal) {
+    btnOpenLaserVideoModal.addEventListener('click', (e) => {
+      e.preventDefault();
+      openShopeeVideo('video/video-laser-engraving.mp4', 'Khắc Laser Sợi Quang Không Phai MODU', 'video/video-laser-engraving-poster.webp', 1);
+    });
+  }
+
+  // Open from Charm Video button in Step 3
+  if (btnOpenCharmVideoModal) {
+    btnOpenCharmVideoModal.addEventListener('click', (e) => {
+      e.preventDefault();
+      openShopeeVideo('video/video-blindbag-charm.mp4', 'Túi Mù Charm Decor Bình Nước MODU', 'video/video-blindbag-charm-poster.webp', 2);
+    });
+  }
+
+  // Media Switcher in 3D bottle preview area
+  if (btnSwitchViewLaserVideo) {
+    btnSwitchViewLaserVideo.addEventListener('click', (e) => {
+      e.preventDefault();
+      openShopeeVideo('video/video-laser-engraving.mp4', 'Khắc Laser Sợi Quang Không Phai MODU', 'video/video-laser-engraving-poster.webp', 1);
+    });
+  }
+
+  // Tabs inside modal
+  modalTabBtns.forEach((tabBtn, idx) => {
+    tabBtn.addEventListener('click', () => {
+      const src = tabBtn.getAttribute('data-video-src');
+      const title = tabBtn.getAttribute('data-video-title');
+      const poster = tabBtn.getAttribute('data-video-poster');
+      openShopeeVideo(src, title, poster, idx);
+    });
+  });
+
+  // Sound toggle
+  if (btnModalSoundToggle && shopeeModalVideo) {
+    btnModalSoundToggle.addEventListener('click', () => {
+      shopeeModalVideo.muted = !shopeeModalVideo.muted;
+      updateSoundIcons(shopeeModalVideo.muted);
+    });
+  }
+
+  // Video progress bar
+  if (shopeeModalVideo && videoProgressFill) {
+    shopeeModalVideo.addEventListener('timeupdate', () => {
+      if (shopeeModalVideo.duration) {
+        const pct = (shopeeModalVideo.currentTime / shopeeModalVideo.duration) * 100;
+        videoProgressFill.style.width = pct + '%';
+      }
+    });
+  }
+
+  // Close modal handlers
+  if (btnCloseShopeeVideoModal) {
+    btnCloseShopeeVideoModal.addEventListener('click', closeShopeeVideo);
+  }
+
+  if (shopeeVideoModal) {
+    shopeeVideoModal.addEventListener('click', (e) => {
+      if (e.target === shopeeVideoModal) {
+        closeShopeeVideo();
+      }
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && shopeeVideoModal && shopeeVideoModal.classList.contains('active')) {
+      closeShopeeVideo();
+    }
+  });
+
+  // Buy now / Customize now button inside modal
+  if (btnModalBuyNow) {
+    btnModalBuyNow.addEventListener('click', () => {
+      closeShopeeVideo();
+      const target = document.getElementById('page-personalize');
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }, 120);
+      }
+    });
+  }
+
   renderAll();
   updateActivePageDot();
 
