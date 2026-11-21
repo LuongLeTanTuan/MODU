@@ -23,23 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (isSearchActive && searchInput) {
         setTimeout(() => searchInput.focus(), 150);
       }
-    
-  // Cinematic Video Sound Toggle
-  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
-  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
-  if (brandCinematicVideo && btnToggleCinematicSound) {
-    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
-    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
-    btnToggleCinematicSound.addEventListener('click', () => {
-      brandCinematicVideo.muted = !brandCinematicVideo.muted;
-      if (soundOff && soundOn) {
-        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
-        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
-      }
     });
-  }
-
-});
 
     if (searchClearBtn && searchInput) {
       searchClearBtn.addEventListener('click', (e) => {
@@ -55,23 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             window.Morphicons.morphElement('#searchIconPath', 'Search', 'snappy');
           }
         }
-      
-  // Cinematic Video Sound Toggle
-  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
-  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
-  if (brandCinematicVideo && btnToggleCinematicSound) {
-    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
-    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
-    btnToggleCinematicSound.addEventListener('click', () => {
-      brandCinematicVideo.muted = !brandCinematicVideo.muted;
-      if (soundOff && soundOn) {
-        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
-        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
-      }
-    });
-  }
-
-});
+      });
     }
 
     if (searchInput) {
@@ -86,26 +54,10 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (e.key === 'Enter') {
           const val = searchInput.value.toLowerCase().trim();
           if (val) {
-            window.location.href = `index.html#page-personalize`;
+            window.location.href = '/#page-personalize';
           }
         }
-      
-  // Cinematic Video Sound Toggle
-  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
-  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
-  if (brandCinematicVideo && btnToggleCinematicSound) {
-    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
-    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
-    btnToggleCinematicSound.addEventListener('click', () => {
-      brandCinematicVideo.muted = !brandCinematicVideo.muted;
-      if (soundOff && soundOn) {
-        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
-        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
-      }
-    });
-  }
-
-});
+      });
     }
 
     document.addEventListener('click', (e) => {
@@ -117,23 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
           window.Morphicons.morphElement('#searchIconPath', 'Search', 'snappy');
         }
       }
-    
-  // Cinematic Video Sound Toggle
-  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
-  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
-  if (brandCinematicVideo && btnToggleCinematicSound) {
-    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
-    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
-    btnToggleCinematicSound.addEventListener('click', () => {
-      brandCinematicVideo.muted = !brandCinematicVideo.muted;
-      if (soundOff && soundOn) {
-        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
-        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
-      }
     });
-  }
-
-});
   }
 
   // Mobile Nav Drawer Toggle with Morphicons Morphing
@@ -148,23 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (window.Morphicons) {
         window.Morphicons.morphElement('#mobileMenuPath', isOpen ? 'X' : 'Menu', 'bouncy');
       }
-    
-  // Cinematic Video Sound Toggle
-  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
-  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
-  if (brandCinematicVideo && btnToggleCinematicSound) {
-    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
-    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
-    btnToggleCinematicSound.addEventListener('click', () => {
-      brandCinematicVideo.muted = !brandCinematicVideo.muted;
-      if (soundOff && soundOn) {
-        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
-        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
-      }
     });
-  }
-
-});
 
     mobileNavPanel.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
@@ -174,40 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.Morphicons) {
           window.Morphicons.morphElement('#mobileMenuPath', 'Menu', 'snappy');
         }
-      
-  // Cinematic Video Sound Toggle
-  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
-  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
-  if (brandCinematicVideo && btnToggleCinematicSound) {
-    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
-    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
-    btnToggleCinematicSound.addEventListener('click', () => {
-      brandCinematicVideo.muted = !brandCinematicVideo.muted;
-      if (soundOff && soundOn) {
-        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
-        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
-      }
+      });
     });
-  }
-
-});
-    
-  // Cinematic Video Sound Toggle
-  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
-  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
-  if (brandCinematicVideo && btnToggleCinematicSound) {
-    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
-    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
-    btnToggleCinematicSound.addEventListener('click', () => {
-      brandCinematicVideo.muted = !brandCinematicVideo.muted;
-      if (soundOff && soundOn) {
-        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
-        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
-      }
-    });
-  }
-
-});
   }
 
   // Interactive Color Palette Switcher
@@ -216,35 +104,35 @@ document.addEventListener('DOMContentLoaded', () => {
       name: 'Mint Green',
       tag: 'Xanh Bạc Hà • Tươi Mới & Cân Bằng',
       desc: 'Sắc xanh pastel êm dịu, lấy cảm hứng từ những lá bạc hà trong sương sớm. Mang đến cảm giác tươi mới, thanh lọc tâm trí và năng lượng tích cực cho ngày làm việc hay học tập hiệu quả.',
-      image: 'assets/bottle-mint.png',
+      image: '/assets/bottle-mint.png',
       badge: 'Bestseller'
     },
     white: {
       name: 'Cream White',
       tag: 'Trắng Kem • Tối Giản & Thuần Khiết',
       desc: 'Tông màu trắng ngà thanh lịch với ánh ấm nhẹ nhàng theo phong cách Scandinavian Minimalist. Dễ dàng phối cùng bất kỳ trang phục hay không gian làm việc hiện đại nào.',
-      image: 'assets/bottle-white.png',
+      image: '/assets/bottle-white.png',
       badge: 'Classic Minimal'
     },
     pink: {
       name: 'Blush Pink',
       tag: 'Hồng Phấn • Ngọt Ngào & Tinh Tế',
       desc: 'Gam hồng pastel ấm áp, trẻ trung và tràn đầy năng lượng ngọt ngào. Lựa chọn hoàn hảo cho những ai yêu thích vẻ đẹp nữ tính, hiện đại và yêu đời.',
-      image: 'assets/bottle-pink.png',
+      image: '/assets/bottle-pink.png',
       badge: 'Trending Vibe'
     },
     blue: {
       name: 'Sky Blue',
       tag: 'Xanh Mây Trời • Tự Do & Phóng Khoáng',
       desc: 'Màu xanh của bầu trời mùa hè trong vắt, khơi gợi cảm hứng tự do khám phá và những chuyến hành trình mới. Mang lại sự bình yên và mát lành trong từng ngụm nước.',
-      image: 'assets/bottle-blue.png',
+      image: '/assets/bottle-blue.png',
       badge: 'Outdoor Ready'
     },
     black: {
       name: 'Obsidian Black',
       tag: 'Đen Nhám • Mạnh Mẽ & Độc Bản',
       desc: 'Sắc đen nhám matte huyền bí, đĩnh đạc và mang đậm phong cách futuristic. Thích hợp cho phòng gym, văn phòng chuyên nghiệp hoặc phong cách street-style cá tính.',
-      image: 'assets/bottle-black.png',
+      image: '/assets/bottle-black.png',
       badge: 'Iconic Matte'
     }
   };
@@ -280,74 +168,27 @@ document.addEventListener('DOMContentLoaded', () => {
       if (colorNameEl) colorNameEl.textContent = data.name;
       if (colorTagEl) colorTagEl.textContent = data.tag;
       if (colorDescEl) colorDescEl.textContent = data.desc;
-    
-  // Cinematic Video Sound Toggle
-  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
-  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
-  if (brandCinematicVideo && btnToggleCinematicSound) {
-    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
-    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
-    btnToggleCinematicSound.addEventListener('click', () => {
-      brandCinematicVideo.muted = !brandCinematicVideo.muted;
-      if (soundOff && soundOn) {
-        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
-        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
-      }
     });
-  }
-
-});
-  
-  // Cinematic Video Sound Toggle
-  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
-  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
-  if (brandCinematicVideo && btnToggleCinematicSound) {
-    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
-    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
-    btnToggleCinematicSound.addEventListener('click', () => {
-      brandCinematicVideo.muted = !brandCinematicVideo.muted;
-      if (soundOff && soundOn) {
-        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
-        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
-      }
-    });
-  }
-
-});
+  });
 
   // Newsletter Submit Feedback
-  const newsletterBtn = document.getElementById('btnAboutNewsletter');
-  const newsletterInput = document.getElementById('aboutNewsletterInput');
+  const newsletterBtn = document.getElementById('btnNewsletter');
+  const newsletterInput = document.getElementById('newsletterInput');
   if (newsletterBtn && newsletterInput) {
     newsletterBtn.addEventListener('click', () => {
       const val = newsletterInput.value.trim();
       if (val && val.includes('@')) {
-        newsletterBtn.textContent = 'Đã Đăng Ký ✓';
+        const labelEl = newsletterBtn.querySelector('span') || newsletterBtn;
+        labelEl.textContent = 'Đã Đăng Ký ✓';
         newsletterBtn.style.backgroundColor = '#d4fc39';
         newsletterInput.value = '';
         setTimeout(() => {
-          newsletterBtn.textContent = 'Đăng Ký';
+          labelEl.textContent = 'Đăng Ký';
         }, 3000);
       } else {
         alert('Vui lòng nhập địa chỉ email hợp lệ!');
       }
-    
-  // Cinematic Video Sound Toggle
-  const brandCinematicVideo = document.getElementById('brandCinematicVideo');
-  const btnToggleCinematicSound = document.getElementById('btnToggleCinematicSound');
-  if (brandCinematicVideo && btnToggleCinematicSound) {
-    const soundOff = btnToggleCinematicSound.querySelector('.sound-icon-off');
-    const soundOn = btnToggleCinematicSound.querySelector('.sound-icon-on');
-    btnToggleCinematicSound.addEventListener('click', () => {
-      brandCinematicVideo.muted = !brandCinematicVideo.muted;
-      if (soundOff && soundOn) {
-        soundOff.style.display = brandCinematicVideo.muted ? 'inline' : 'none';
-        soundOn.style.display = brandCinematicVideo.muted ? 'none' : 'inline';
-      }
     });
-  }
-
-});
   }
 
   // Cinematic Video Sound Toggle
@@ -364,5 +205,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-
 });
