@@ -1121,11 +1121,26 @@ figcaption {
    RESPONSIVE DESIGN FOR BLOG
    =================================================================== */
 @media (max-width: 900px) {
+  .blog-body .navbar {
+    padding: 0 5vw !important;
+  }
+  .blog-body .brand-logo .logo-text {
+    font-size: 32px !important;
+  }
   .blog-body .nav-center {
     display: none !important;
   }
   .blog-body .mobile-menu-btn {
     display: flex !important;
+  }
+  .blog-nav-actions {
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  .journal-intro {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-bottom: 32px;
   }
   .featured-post {
     grid-template-columns: 1fr;
@@ -1154,37 +1169,170 @@ figcaption {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  body.blog-body {
+    background:
+      linear-gradient(180deg, rgba(121, 187, 247, 0) 260px, rgba(133, 194, 249, 0.9) 540px, #9dcffb 85%, #cfe3f8 100%),
+      url('assets/hero-bg.png') center top / auto 620px no-repeat !important;
+    background-attachment: scroll !important;
+    overflow-x: clip;
+  }
   .blog-body .navbar {
-    height: 72px !important;
-    padding: 0 5vw !important;
+    height: 68px !important;
+    padding: 0 4.5vw !important;
+  }
+  .blog-body .brand-logo {
+    order: 1 !important;
+    margin-right: auto !important;
+  }
+  .blog-body .brand-logo .logo-text {
+    font-size: 26px !important;
+  }
+  .blog-body .studio-link {
+    display: none !important;
+  }
+  .blog-nav-actions {
+    order: 2 !important;
+    gap: 8px !important;
+    flex-shrink: 0 !important;
+  }
+  .blog-body .icon-btn,
+  .blog-body .mobile-menu-btn {
+    width: 38px !important;
+    height: 38px !important;
+    flex-shrink: 0 !important;
+    background: rgba(255, 255, 255, 0.55) !important;
+    border: 1px solid rgba(255, 255, 255, 0.88) !important;
+    color: #081d36 !important;
   }
   .blog-main,
   .article-main {
-    padding-top: 90px;
-    padding-bottom: 48px;
+    padding: 88px 4.5vw 48px;
   }
   .journal-intro {
     grid-template-columns: 1fr;
-    gap: 24px;
-    padding-bottom: 30px;
+    gap: 18px;
+    padding-bottom: 28px;
   }
   .journal-intro h1 {
-    font-size: clamp(2.6rem, 12vw, 3.4rem);
+    font-size: clamp(2.15rem, 9.5vw, 3rem);
+    margin-top: 14px;
+  }
+  .journal-intro > p {
+    font-size: 0.96rem;
+    line-height: 1.7;
+  }
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+  .section-heading h2 {
+    font-size: 1.7rem;
+  }
+  .featured-picture {
+    min-height: 220px;
+  }
+  .featured-copy {
+    padding: 24px 20px;
+  }
+  .featured-copy h2 {
+    font-size: 1.45rem;
+  }
+  .card-copy {
+    padding: 22px 20px;
+  }
+  .card-copy h3 {
+    font-size: 1.28rem;
+  }
+  .blog-cta {
+    margin: 0 4.5vw 44px;
+    padding: 28px 20px;
+    gap: 18px;
+  }
+  .blog-cta h2 {
+    font-size: 1.65rem;
+  }
+  .blog-cta .blog-button {
+    width: 100%;
+    justify-content: center;
+  }
+  .breadcrumbs {
+    gap: 6px;
+    margin-bottom: 20px;
+    font-size: 0.76rem;
+  }
+  .breadcrumbs a,
+  .breadcrumbs span {
+    padding: 4px 10px;
+  }
+  .article-header {
+    margin-bottom: 28px;
+  }
+  .article-header h1 {
+    font-size: clamp(1.7rem, 7vw, 2.3rem);
+    margin: 16px 0;
+  }
+  .article-intro {
+    font-size: 0.96rem;
+    line-height: 1.75;
+  }
+  .article-cover {
+    margin-bottom: 28px;
+  }
+  .article-toc {
+    padding: 20px 18px;
+    margin-bottom: 24px;
   }
   .article-content {
-    padding: 28px 20px;
+    padding: 24px 18px;
     border-radius: 20px;
+    font-size: 0.96rem;
+    line-height: 1.8;
+    overflow-wrap: break-word;
+  }
+  .article-content h2 {
+    font-size: 1.42rem;
+    margin: 28px 0 14px;
+  }
+  .article-content h3 {
+    font-size: 1.15rem;
+    margin: 22px 0 10px;
+  }
+  .article-end {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .article-keywords-box {
+    padding: 18px;
+  }
+  .keyword-tag-pill {
+    padding: 6px 12px;
+    font-size: 0.8rem;
   }
   .comments-section {
-    padding: 28px 18px;
+    padding: 24px 16px;
+    margin-top: 36px;
   }
   .comment-form {
-    padding: 20px 16px;
+    padding: 18px 14px;
   }
   .comment-form-row {
     grid-template-columns: 1fr;
     gap: 12px;
+  }
+  .comment-item {
+    padding: 16px 14px;
+    gap: 12px;
+  }
+  .comment-item.is-admin-reply {
+    margin-left: 14px;
+  }
+  .comment-avatar {
+    width: 36px;
+    height: 36px;
+    font-size: 0.88rem;
   }
 }
 
@@ -1350,4 +1498,18 @@ figcaption {
 .article-callout-box svg {
   flex-shrink: 0;
   color: #081d36;
+}
+
+@media (max-width: 768px) {
+  .editorial-video-bottom-card {
+    padding: 10px 12px;
+    gap: 8px;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+  }
+  .btn-editorial-cta {
+    padding: 6px 12px;
+    font-size: 0.72rem;
+  }
 }

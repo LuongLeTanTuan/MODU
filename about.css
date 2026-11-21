@@ -487,14 +487,18 @@ body.modu-body .nav-search-bar input::placeholder {
 }
 
 .manifesto-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  background: rgba(8, 29, 54, 0.8);
   font-family: var(--font-display);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--lime-accent);
-  margin-bottom: 0.6rem;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.75rem;
+  text-shadow: none;
 }
 
 .manifesto-title {
@@ -836,8 +840,12 @@ body.modu-body .nav-search-bar input::placeholder {
 }
 
 .color-active-subtitle {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  background: rgba(8, 29, 54, 0.8);
   font-family: var(--font-display);
-  font-size: 0.98rem;
+  font-size: 0.88rem;
   font-weight: 600;
   color: var(--lime-accent);
   margin-bottom: 1rem;
@@ -1106,13 +1114,70 @@ body.modu-body .nav-search-bar input::placeholder {
 }
 
 @media (max-width: 768px) {
+  body.modu-body {
+    background:
+      linear-gradient(180deg, rgba(121, 187, 247, 0) 260px, rgba(133, 194, 249, 0.9) 540px, #9dcffb 85%, #cfe3f8 100%),
+      url('assets/hero-bg.png') center top / auto 620px no-repeat !important;
+    background-attachment: scroll !important;
+    overflow-x: clip;
+  }
+
   .about-page-wrapper {
-    padding-top: 85px;
+    padding-top: 76px;
   }
 
   body.modu-body .navbar {
-    height: 72px !important;
-    padding: 0 5vw !important;
+    height: 68px !important;
+    padding: 0 4.5vw !important;
+  }
+
+  body.modu-body .brand-logo {
+    order: 1;
+    margin-right: auto;
+  }
+
+  body.modu-body .brand-logo .logo-text {
+    font-size: 26px !important;
+  }
+
+  body.modu-body .nav-actions {
+    order: 2;
+    gap: 8px !important;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+
+  body.modu-body .navbar #navCustomizeBtn {
+    display: none !important;
+  }
+
+  body.modu-body .icon-btn,
+  body.modu-body .mobile-menu-btn {
+    width: 38px !important;
+    height: 38px !important;
+    flex-shrink: 0 !important;
+    background: rgba(255, 255, 255, 0.55) !important;
+    border: 1px solid rgba(255, 255, 255, 0.88) !important;
+    color: #081d36 !important;
+  }
+
+  body.modu-body .mobile-menu-btn {
+    order: 3;
+  }
+
+  body.modu-body .nav-search-bar {
+    position: fixed !important;
+    top: 74px !important;
+    left: 4vw !important;
+    right: 4vw !important;
+    width: auto !important;
+    max-width: none !important;
+    transform: translateY(-8px) !important;
+    z-index: 1060 !important;
+  }
+
+  body.modu-body .nav-search-bar.open {
+    transform: translateY(0) !important;
   }
 
   .about-hero,
@@ -1122,24 +1187,90 @@ body.modu-body .nav-search-bar input::placeholder {
   .colors-section,
   .unboxing-section,
   .studio-cta-section {
-    padding: 3rem 0;
+    padding: 2.5rem 0;
+  }
+
+  .hero-editorial-grid {
+    padding: 0;
+    gap: 2rem;
+  }
+
+  .hero-headline {
+    font-size: clamp(2.05rem, 8.2vw, 2.7rem);
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-lead-text {
+    font-size: 0.98rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .hero-cta-row {
+    gap: 12px;
   }
 
   .manifesto-split-layout,
-  .hardware-section .about-container,
   .color-stage-layout,
   .unboxing-editorial-grid,
   .studio-cta-box {
+    padding: 28px 18px;
+  }
+
+  .manifesto-block {
+    padding: 20px 18px;
+  }
+
+  .hardware-section {
+    padding: 2.5rem 4vw;
+  }
+
+  .hardware-section .about-container {
     padding: 32px 20px;
+    border-radius: 24px;
   }
 
   .capacity-spec-card {
-    padding: 2.2rem 1.6rem;
+    padding: 2.2rem 1.5rem;
+  }
+
+  .capacity-visual {
+    height: 240px;
+    margin-bottom: 1.25rem;
+  }
+
+  .capacity-visual img {
+    max-height: 220px;
+  }
+
+  .color-stage-viewport {
+    height: 320px;
+  }
+
+  .color-stage-viewport img {
+    max-height: 250px;
+  }
+
+  .color-swatches-list {
+    gap: 8px;
+  }
+
+  .color-swatch-item {
+    padding: 8px 14px;
+    font-size: 0.82rem;
   }
 
   .quality-strip-grid {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+
+  .studio-cta-title {
+    font-size: clamp(1.75rem, 7vw, 2.2rem);
+  }
+
+  .studio-cta-desc {
+    font-size: 0.96rem;
+    margin-bottom: 1.8rem;
   }
 }
 
@@ -1244,4 +1375,10 @@ body.modu-body .nav-search-bar input::placeholder {
 
 .cinematic-caption strong {
   color: var(--lime-accent);
+}
+
+@media (max-width: 768px) {
+  .cinematic-video-wrapper {
+    aspect-ratio: 16 / 9;
+  }
 }
